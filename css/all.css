@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #DA7569;
+  height: 10vh;
+  width: 100vw;
+}
+
+main {
+  background-color: #F2E4D4;
+  width: 100vw;
+  height: 100vh;
+}
+
+main #choice {
+  background-image: url(../image/index_bg.png);
+  padding: 60px 0;
+}
+
+main #choice .container {
+  width: 950px;
+}
+
+main #choice .acc-btn {
+  width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 8px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+main #choice .acc-btn .img img {
+  width: 100%;
+}
+
+main #choice .acc-btn .text {
+  margin: 40px 0;
+  color: #333;
+  text-align: center;
+  font-weight: 600;
+}
+
+main #choice .acc-btn .text span {
+  display: block;
+}
+
+main #choice .acc-btn .letter {
+  border-radius: 10px;
+  width: 290px;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 17px 0;
+}
+
+main #choice .fire {
+  border: 5px solid #BC7C96;
+  margin-right: 10px;
+}
+
+main #choice .fire .letter {
+  background-color: #BC7C96;
+}
+
+main #choice .join {
+  border: 5px solid #E0AB77;
+  margin-left: 10px;
+}
+
+main #choice .join .letter {
+  background-color: #E0AB77;
+}
+/*# sourceMappingURL=all.css.map */
