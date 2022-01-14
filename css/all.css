@@ -17,8 +17,6 @@ footer {
 
 main {
   background-color: #F2E4D4;
-  width: 100vw;
-  height: 100vh;
 }
 
 main #choice {
@@ -26,12 +24,7 @@ main #choice {
   padding: 60px 0;
 }
 
-main #choice .container {
-  width: 950px;
-}
-
 main #choice .acc-btn {
-  width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,9 +35,9 @@ main #choice .acc-btn {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 8px;
+  border-radius: 10px;
   margin: auto;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 main #choice .acc-btn .img img {
@@ -87,5 +80,102 @@ main #choice .join {
 
 main #choice .join .letter {
   background-color: #E0AB77;
+}
+
+main #kitchen {
+  width: 100vw;
+  height: 1200px;
+  background-color: #F2E4D4;
+  color: #333;
+}
+
+main #kitchen .kitchen-title {
+  font-size: 36px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #kitchen .shop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1200px;
+}
+
+main #kitchen .shop .introduce1 {
+  border: 3px solid #A1A481;
+}
+
+main #kitchen .shop .introduce2 {
+  border: 3px solid #BC7C96;
+}
+
+main #kitchen .shop .introduce3 {
+  border: 3px solid #DA7569;
+}
+
+main #kitchen .shop .shop-introduce {
+  border-radius: 5px;
+  width: 900px;
+  height: 180px;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #kitchen .shop .shop-introduce .place {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main #kitchen .shop .shop-introduce p {
+  font-size: 20px;
+  width: 850px;
+  margin: 0;
+}
+
+main #kitchen .shop .shop-introduce .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #kitchen .shop .shop-introduce .bottom .time-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #kitchen .shop .shop-introduce .bottom .time-box .time {
+  background-color: #E5E5E5;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+main #kitchen .shop .shop-introduce .bottom a {
+  color: #DA7569;
+  margin-right: 30px;
 }
 /*# sourceMappingURL=all.css.map */
