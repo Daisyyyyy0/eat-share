@@ -55,6 +55,78 @@ main{
                 background-color: $teaColor;
             }
         }
+
+
+    
+    }
+
+    // 商家介紹
+    #kitchen{
+        width: 100vw;
+        height: 1200px;
+        background-color: $themeColor;
+        color: $textColor;
+
+        .kitchen-title{
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+        .shop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            .introduce1{
+                border: 3px solid $greenColor; 
+            }
+            .introduce2{
+                border: 3px solid $purpleColor; 
+            }
+            .introduce3{
+                border: 3px solid $redColor; 
+            }
+            .shop-introduce{              
+                border-radius: 5px;
+                width: 900px;
+                height: 180px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .place{
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 20px;
+                    width: 850px;
+                    margin: 0;
+                }
+                .bottom{
+                    display: flex;
+                    justify-content: space-between;
+
+                    .time-box{
+                        display: flex;
+                        .time{
+                            background-color: #E5E5E5;
+                            border-radius: 20px;
+                            margin-right: 10px; 
+                        }
+                        
+                    }
+                    a{
+                        color: $redColor;
+                        margin-right: 30px;
+                        
+                    }
+                }
+            }
+        }
+        
     }
     // .box{
     //     width: 80%;
