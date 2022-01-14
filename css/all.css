@@ -9,10 +9,35 @@ a {
   text-decoration: none;
 }
 
+nav {
+  height: 100px;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.nav-item1 {
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #DA7569;
+  font-size: larger;
+}
+
 footer {
   background-color: #DA7569;
-  height: 10vh;
-  width: 100vw;
+}
+
+.group-icon {
+  margin-left: 10px;
 }
 
 main {
@@ -181,5 +206,131 @@ main #kitchen .shop .shop-introduce .bottom .time-box .time {
 main #kitchen .shop .shop-introduce .bottom a {
   color: #DA7569;
   margin-right: 30px;
+}
+
+#partner {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bolder;
+  background-image: url(../image/5591276.jpg);
+  background-size: 1920px 900px;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 500px;
+  font-size: 20px;
+}
+
+#partner .container .p {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#partner .pill {
+  width: 800px;
+  height: 150px;
+  background-color: #BC7C96;
+  border-radius: 100px;
+  position: absolute;
+  left: calc(50% - 400px);
+  bottom: -65px;
+  margin: 0px;
+  line-height: 150px;
+  font-size: 75px;
+  color: aliceblue;
+}
+
+#partner .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#partner .location .city {
+  width: 150px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 0px 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#partner .location .city .name {
+  width: 80px;
+  height: 30px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: calc(50% - 40px);
+  top: -15px;
+}
+
+#partner .location .green {
+  border: 2px solid green;
+}
+
+#partner .location .green .name {
+  background-color: green;
+}
+
+#partner .location .orange {
+  border: 2px solid orange;
+}
+
+#partner .location .orange .name {
+  background-color: orange;
+}
+
+#partner .location .red {
+  border: 2px solid red;
+}
+
+#partner .location .red .name {
+  background-color: red;
+}
+
+#partner .location .blue {
+  border: 2px solid blue;
+}
+
+#partner .location .blue .name {
+  background-color: blue;
+}
+
+#partner .location .yellow {
+  border: 2px solid yellow;
+}
+
+#partner .location .yellow .name {
+  background-color: yellow;
 }
 /*# sourceMappingURL=all.css.map */
