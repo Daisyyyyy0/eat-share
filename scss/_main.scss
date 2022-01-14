@@ -58,7 +58,43 @@ main{
 
     
     }
+    // 使用流程
+    #how-to-use{
+        // height: 100vh;
+        background-image: url(../image/index_bg.png);
+        color: $textColor;
+        text-align: center;
+        .title{
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 75px;
+        }
+        .row{
+            .col{
+                .stap-pic{
+                    position: relative;
+                    left: 70px;
+                    top: -70px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    img{
+                        width: 170px;
+                        height: 150px; 
+                        margin-bottom: 20px;
+                    }  
+                }
+                .stap-arrow{
+                    position: relative;
+                    left: 200px;
+                    bottom: 130px;
+                    font-size: 36px;
+                }
+            }
+        }
 
+        
+        
+    }
     // 商家介紹
     #kitchen{
         width: 100vw;
