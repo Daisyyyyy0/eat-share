@@ -1,0 +1,18 @@
+nav{
+    height: 100px;
+}
+
+.nav-item{
+    margin-right: 30px;
+}
+
+.nav-item1{
+    flex: none;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: $redColor;
+    font-size: larger;
+}
