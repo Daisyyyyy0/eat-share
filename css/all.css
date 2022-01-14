@@ -40,6 +40,10 @@ main #choice .acc-btn {
   padding: 20px;
 }
 
+main #choice .acc-btn .img {
+  width: 290px;
+}
+
 main #choice .acc-btn .img img {
   width: 100%;
 }
