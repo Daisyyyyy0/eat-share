@@ -111,6 +111,67 @@ main #choice .join .letter {
   background-color: #E0AB77;
 }
 
+main #information .container .row .news {
+  text-align: center;
+  font-size: 24px;
+}
+
+main #information .container .row .news .news-box {
+  font-weight: bold;
+  background-color: #EEC7AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 100px;
+  position: relative;
+  top: 15%;
+  left: 5%;
+}
+
+main #information .container .row .news .news-context {
+  background-color: #EFC4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #information .container .row .news .news-context .t {
+  width: 80%;
+}
+
+main #information .container .row .news .news-context .t thead {
+  line-height: 2.5;
+}
+
+main #information .container .row .news .news-context .t tbody .row {
+  color: white;
+  background-color: #DA7569;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main #how-to-use {
   background-image: url(../image/index_bg.png);
   color: #333;
@@ -202,6 +263,7 @@ main #kitchen .shop .shop-introduce {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
 }
 
 main #kitchen .shop .shop-introduce .place {
