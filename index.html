@@ -121,7 +121,7 @@
                                     <td>1262</td>
                                   </tr>
                                   <tr>
-                                    <th scope="row" class="row">3</th>
+                                    <th scope="row" class="row row3">3</th>
                                     <td>2022-01-08</td>
                                     <td>家庭廚師來領獎!</td>
                                     <td>1735</td>
@@ -130,9 +130,76 @@
                               </table>
                         </div>
                     </div>
-                    <div class="col-4 ">
-                        <div class="advertise"></div>
+                    <div class="col-4 advertise">
+                        <div class="swiper" id="carousel">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                <img src="https://placeholder.pics/svg/416x251" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="https://placeholder.pics/svg/416x251" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="swiper-slide">
+                                <img src="https://placeholder.pics/svg/416x251" class="d-block w-100" alt="...">
+                                </div>
+                                
+                            </div>                 
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
                     </div>  
+                </div>
+            </div>
+            <div class="container container2">
+                <div class="row row2">
+                    <div class="col-4 rules">
+                        <div class="box price">收費標準</div>
+                        <div class="box time">搭伙時段</div>
+                        <div class="rules-context">
+                            <div class="rules-price" style="border-bottom: 2px rgb(95, 85, 85) solid">
+                                <p>依店家規定</p>
+                                <p>收費範圍在50~120元間</p>
+                            </div>
+                            <div class="rules-time">
+                                <div class="rules-time1">
+                                    <div>中午時段</div>
+                                    <div class="white-box">11</div>
+                                    <div class="white-box">~</div>
+                                    <div class="white-box">13</div>
+                                </div>
+                                <div class="rules-time1">
+                                    <div>晚間時段</div>
+                                    <div class="white-box">17</div>
+                                    <div class="white-box">~</div>
+                                    <div class="white-box">20</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 member">
+                        <div class="member-title">團隊介紹</div>
+                        <div class="member-context">
+                            <div class="member-card">
+                                <img src="./image/pic/member-pic1.png" alt="">
+                                <p>Mason</p>
+                            </div>
+                            <div class="member-card">
+                                <img src="./image/pic/member-pic2.png" alt="">
+                                <p>Aston</p>
+                            </div>
+                            <div class="member-card">
+                                <img src="./image/pic/member-pic3.png" alt="">
+                                <p>Annie</p>
+                            </div>
+                            <div class="member-card">
+                                <img src="./image/pic/member-pic4.png" alt="">
+                                <p>Daisy</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -399,6 +466,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- 輪播區塊 JS -->
+    <script src="./JS/swiper.js"></script>
 </body>
 
 </html>

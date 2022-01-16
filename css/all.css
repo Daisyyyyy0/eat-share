@@ -114,6 +114,12 @@ main #choice .join .letter {
 main #information .container .row .news {
   text-align: center;
   font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #information .container .row .news .news-box {
@@ -127,9 +133,7 @@ main #information .container .row .news .news-box {
           align-items: center;
   width: 65px;
   height: 100px;
-  position: relative;
-  top: 15%;
-  left: 5%;
+  position: absolute;
 }
 
 main #information .container .row .news .news-context {
@@ -143,6 +147,7 @@ main #information .container .row .news .news-context {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 main #information .container .row .news .news-context .t {
@@ -170,6 +175,147 @@ main #information .container .row .news .news-context .t tbody .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main #information .container .row .news .news-context .t tbody .row3 {
+  margin-bottom: 10px;
+}
+
+main #information .container .row .advertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #information .container .row .advertise .swiper {
+  height: 251px;
+}
+
+main #information .container2 .row2 .rules {
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #information .container2 .row2 .rules .box {
+  background-color: #EEC7AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 65px;
+  height: 100px;
+  position: absolute;
+}
+
+main #information .container2 .row2 .rules .rules-context {
+  background-color: #EAA69D;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-price {
+  padding: 40px 0 26px 0;
+  margin-bottom: 26px;
+  width: 75%;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-price p {
+  margin: 0;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 40px;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time .rules-time1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time .rules-time1 .white-box {
+  background-color: #E5E5E5;
+  width: 53px;
+  border-radius: 5px;
+}
+
+main #information .container2 .row2 .member {
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EEC7AE;
+}
+
+main #information .container2 .row2 .member .member-title {
+  background-color: #E8DBCC;
+  width: 150px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 20px 0;
+}
+
+main #information .container2 .row2 .member .member-context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+main #information .container2 .row2 .member .member-context .member-card {
+  text-align: center;
+}
+
+main #information .container2 .row2 .member .member-context .member-card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
 }
 
 main #how-to-use {
