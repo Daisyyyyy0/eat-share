@@ -111,7 +111,23 @@ main #choice .join .letter {
   background-color: #E0AB77;
 }
 
-main #information .container .row .news {
+main #information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+main #information .container1 {
+  margin-top: 80px;
+  position: relative;
+}
+
+main #information .container1 .row .news {
   text-align: center;
   font-size: 24px;
   display: -webkit-box;
@@ -122,7 +138,7 @@ main #information .container .row .news {
           align-items: center;
 }
 
-main #information .container .row .news .news-box {
+main #information .container1 .row .news .news-box {
   font-weight: bold;
   background-color: #EEC7AE;
   display: -webkit-box;
@@ -134,9 +150,11 @@ main #information .container .row .news .news-box {
   width: 65px;
   height: 100px;
   position: absolute;
+  top: -20%;
+  left: 5%;
 }
 
-main #information .container .row .news .news-context {
+main #information .container1 .row .news .news-context {
   background-color: #EFC4C4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,15 +168,15 @@ main #information .container .row .news .news-context {
   width: 100%;
 }
 
-main #information .container .row .news .news-context .t {
+main #information .container1 .row .news .news-context .t {
   width: 80%;
 }
 
-main #information .container .row .news .news-context .t thead {
+main #information .container1 .row .news .news-context .t thead {
   line-height: 2.5;
 }
 
-main #information .container .row .news .news-context .t tbody .row {
+main #information .container1 .row .news .news-context .t tbody .row {
   color: white;
   background-color: #DA7569;
   border-radius: 50%;
@@ -177,21 +195,17 @@ main #information .container .row .news .news-context .t tbody .row {
           align-items: center;
 }
 
-main #information .container .row .news .news-context .t tbody .row3 {
+main #information .container1 .row .news .news-context .t tbody .row3 {
   margin-bottom: 10px;
 }
 
-main #information .container .row .advertise {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main #information .container1 .row .advertise .swiper {
+  height: 251px;
 }
 
-main #information .container .row .advertise .swiper {
-  height: 251px;
+main #information .container2 {
+  position: relative;
+  margin-bottom: 40px;
 }
 
 main #information .container2 .row2 .rules {
@@ -214,6 +228,16 @@ main #information .container2 .row2 .rules .box {
   width: 65px;
   height: 100px;
   position: absolute;
+}
+
+main #information .container2 .row2 .rules .price {
+  top: 10%;
+  left: -2%;
+}
+
+main #information .container2 .row2 .rules .time {
+  top: 55%;
+  left: -2%;
 }
 
 main #information .container2 .row2 .rules .rules-context {
@@ -274,6 +298,12 @@ main #information .container2 .row2 .member {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+main #information .container2 .row2 .member .member-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -282,6 +312,7 @@ main #information .container2 .row2 .member {
       -ms-flex-align: center;
           align-items: center;
   background-color: #EEC7AE;
+  width: 100%;
 }
 
 main #information .container2 .row2 .member .member-title {

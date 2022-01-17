@@ -60,61 +60,64 @@ main{
     }
     // 平台資訊
     #information{
-        .container{
-            .row{
-                .news{
-                   text-align: center;
-                   font-size: 24px;
-                //    height: 500px;
-                   display: flex;
-                   align-items: center;
-                  
-                   .news-box{
-                       font-weight: bold;
-                       background-color: $orangeColor;
-                       display: flex;
-                       align-items: center;
-                       width: 65px;
-                       height: 100px;
-                       position: absolute;
-                   }
-                   .news-context{
-                       background-color: $pinkColor;
-                       display: flex;
-                       justify-content: center;
-                       align-items: center; 
-                    //    height: 250px;
-                       width: 100%;
-                       .t{ 
-                           width: 80%;
-                           thead{
-                               line-height: 2.5;                              
-                           }
-                           tbody{
-                               .row{
-                                   color: white;
-                                   background-color: $redColor;
-                                   border-radius: 50%;
-                                   width: 50px;
-                                   height: 50px;
-                                   margin-top: 10px;
-                                   margin-right: 5px;
-                                   display: flex;
-                                   justify-content: center;
-                                   align-items: center;                                 
-                               }
-                               .row3{
-                                   margin-bottom: 10px;
-                               }
-                               
-                           }
-                       }
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .container1{
+            margin-top: 80px;
+            position: relative;
+            .row{               
+                .news{       
+                    text-align: center;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;                 
+                    .news-box{
+                        font-weight: bold;
+                        background-color: $orangeColor;
+                        display: flex;
+                        align-items: center;
+                        width: 65px;
+                        height: 100px;
+                        position: absolute;
+                        top: -20%;
+                        left: 5%;
+                    }
+                    .news-context{
+                        background-color: $pinkColor;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        //    height: 250px;
+                        width: 100%;
+                        .t{ 
+                            width: 80%;
+                            thead{
+                                line-height: 2.5;                              
+                            }
+                            tbody{
+                                .row{
+                                    color: white;
+                                    background-color: $redColor;
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                    margin-top: 10px;
+                                    margin-right: 5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;                                 
+                                }
+                                .row3{
+                                    margin-bottom: 10px;
+                                }
+                                
+                            }
+                        }
 
-                   }
+                    }
                 }
                 .advertise{
-                    display: flex;
-                    align-items: center;
                     .swiper{
                         height: 251px;
                     }
@@ -124,6 +127,8 @@ main{
             
         }
         .container2{
+            position: relative;
+            margin-bottom: 40px;
             .row2{
                 .rules{
                     font-size: 24px;
@@ -138,14 +143,14 @@ main{
                         height: 100px;
                         position: absolute;
                     }
-                    // .price{
-                    //     top: 10%;
-                    //     right: 10%;
-                    // }
-                    // .time{
-                    //     top: 20%;
-                    //     right: 10%;
-                    // }
+                    .price{
+                        top: 10%;
+                        left: -2%;
+                    }
+                    .time{
+                        top: 55%;
+                        left: -2%;
+                    }
                     .rules-context{
                         background-color: #EAA69D;
                         text-align: center;
@@ -184,9 +189,16 @@ main{
                     font-size: 24px;
                     font-weight: bold;
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    background-color: $orangeColor;
+                    // flex-direction: column;
+                    // align-items: center;
+                    .member-section{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $orangeColor;  
+                        width: 100%;
+                    }
+                   
                     .member-title{
                         background-color: #E8DBCC;
                         width: 150px;
