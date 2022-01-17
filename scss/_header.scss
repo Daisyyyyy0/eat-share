@@ -12,8 +12,10 @@ header{
 
 
   .navbar-brand{
-    padding: 0.125rem 0;
-    
+    padding: 0.4rem 0;
+    img{
+      height: 4.25rem;
+    }
   }
   .navbar-toggler{
     color: $redColor;

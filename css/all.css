@@ -27,7 +27,11 @@ header {
 }
 
 .navbar .navbar-brand {
-  padding: 0.125rem 0;
+  padding: 0.4rem 0;
+}
+
+.navbar .navbar-brand img {
+  height: 4.25rem;
 }
 
 .navbar .navbar-toggler {
@@ -631,7 +635,7 @@ main #kitchen .shop .shop-introduce .bottom a {
 }
 
 #banner {
-  padding: 7.5rem 0;
+  padding: 6rem 0;
   height: 500px;
 }
 
@@ -658,6 +662,7 @@ main #kitchen .shop .shop-introduce .bottom a {
   letter-spacing: 2px;
   margin-bottom: 2rem;
   text-align: center;
+  color: #555;
 }
 
 #banner .floating {
@@ -696,5 +701,59 @@ main #kitchen .shop .shop-introduce .bottom a {
 
 #banner .img3 img {
   height: 100px;
+}
+
+#pain-point .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 1140px;
+}
+
+#pain-point .pain {
+  border: 6px solid #DA7569;
+  border-radius: 8px;
+}
+
+#pain-point .pain img {
+  width: 100%;
+  height: 320px;
+}
+
+#belief {
+  padding: 2rem 0;
+}
+
+#belief .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  max-width: 1140px;
+}
+
+#belief .bigImg {
+  max-width: 780px;
+}
+
+#belief .bigImg img {
+  width: 100%;
+}
+
+#belief .descWrap {
+  background-color: white;
 }
 /*# sourceMappingURL=all.css.map */
