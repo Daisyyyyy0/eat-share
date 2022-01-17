@@ -3,6 +3,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar {
@@ -22,7 +23,6 @@ header{
     box-shadow: unset;
   }
   .navbar-nav{
-    
     .nav-item {
       margin-right: 10px;
 

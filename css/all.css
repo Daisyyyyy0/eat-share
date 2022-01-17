@@ -18,6 +18,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .navbar {
@@ -627,5 +628,73 @@ main #kitchen .shop .shop-introduce .bottom a {
   line-height: 150px;
   font-size: 75px;
   color: aliceblue;
+}
+
+#banner {
+  padding: 7.5rem 0;
+  height: 500px;
+}
+
+#banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#banner .text {
+  z-index: 3;
+}
+
+#banner .text p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#banner .floating {
+  position: absolute;
+  z-index: 2;
+}
+
+#banner .img1 {
+  top: 0;
+  left: 10%;
+  -webkit-transform: rotateZ(-16deg);
+          transform: rotateZ(-16deg);
+}
+
+#banner .img1 img {
+  height: 196px;
+}
+
+#banner .img2 {
+  top: -2rem;
+  right: 10%;
+  -webkit-transform: rotateZ(10deg);
+          transform: rotateZ(10deg);
+}
+
+#banner .img2 img {
+  height: 140px;
+}
+
+#banner .img3 {
+  bottom: 0;
+  right: 20%;
+  -webkit-transform: rotateZ(-5deg);
+          transform: rotateZ(-5deg);
+}
+
+#banner .img3 img {
+  height: 100px;
 }
 /*# sourceMappingURL=all.css.map */

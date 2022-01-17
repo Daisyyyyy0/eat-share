@@ -1,0 +1,48 @@
+#banner{
+    padding: 7.5rem 0;
+    height: 500px;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .text{
+        z-index: 3;
+        p{
+            font-size: 1.25rem;
+            font-weight: 600; 
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    }
+    .floating{
+        position: absolute;
+        z-index: 2;
+    }
+    .img1{
+        top: 0;
+        left: 10%;
+        transform: rotateZ(-16deg);
+        img{
+            height: 196px;
+        }
+    }
+    .img2{
+        top: -2rem;
+        right: 10%;
+        transform: rotateZ(10deg);
+        img{
+            height: 140px;
+        }
+    }
+    .img3{
+        bottom: 0;
+        right: 20%;
+        transform: rotateZ(-5deg);
+        img{
+            height: 100px;
+        }
+    }
+}
