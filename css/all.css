@@ -155,7 +155,7 @@ main #information .container1 .row .news .news-box {
 }
 
 main #information .container1 .row .news .news-context {
-  background-color: #EFC4C4;
+  background-color: rgba(239, 196, 196, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -335,6 +335,8 @@ main #information .container2 .row2 .member .member-context {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 30px;
           column-gap: 30px;
 }
@@ -359,12 +361,19 @@ main #how-to-use .title {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 75px;
+  padding-top: 75px;
+}
+
+main #how-to-use .row .col .stap-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main #how-to-use .row .col .stap-pic {
   position: relative;
-  left: 70px;
-  top: -70px;
+  left: 3%;
+  bottom: 16%;
   font-size: 24px;
   font-weight: bold;
 }
@@ -377,7 +386,7 @@ main #how-to-use .row .col .stap-pic img {
 
 main #how-to-use .row .col .stap-arrow {
   position: relative;
-  left: 200px;
+  left: 60%;
   bottom: 130px;
   font-size: 36px;
 }

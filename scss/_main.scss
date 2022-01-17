@@ -84,7 +84,8 @@ main{
                         left: 5%;
                     }
                     .news-context{
-                        background-color: $pinkColor;
+                        // background-color: $pinkColor;
+                        background-color:rgba(239,196,196,0.5); 
                         display: flex;
                         justify-content: center;
                         align-items: center; 
@@ -210,8 +211,12 @@ main{
                     }
                     .member-context{
                         display: flex;
+                        flex-wrap: wrap;
                         column-gap: 30px;
                         .member-card{
+                            // display: flex;
+                            // flex-direction: column;
+                            // flex-wrap: wrap;
                             text-align: center;
                             img{
                                 width: 150px;
@@ -234,13 +239,17 @@ main{
             font-size: 36px;
             font-weight: bold;
             margin-bottom: 75px;
+            padding-top: 75px;
         }
-        .row{
+        .row{   
             .col{
+                .stap-number{
+                    display: flex;
+                }
                 .stap-pic{
                     position: relative;
-                    left: 70px;
-                    top: -70px;
+                    left: 3%;
+                    bottom: 16%;
                     font-size: 24px;
                     font-weight: bold;
                     img{
@@ -251,7 +260,7 @@ main{
                 }
                 .stap-arrow{
                     position: relative;
-                    left: 200px;
+                    left: 60%;
                     bottom: 130px;
                     font-size: 36px;
                 }
