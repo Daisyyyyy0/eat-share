@@ -285,7 +285,6 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1200px;
             .introduce1{
                 border: 3px solid $greenColor; 
             }
@@ -297,8 +296,8 @@ main{
             }
             .shop-introduce{              
                 border-radius: 5px;
-                width: 900px;
-                height: 180px;
+                width: 75%;
+                height: 80%;
                 padding: 15px;
                 display: flex;
                 flex-direction: column;
@@ -311,7 +310,7 @@ main{
                 }
                 p{
                     font-size: 20px;
-                    width: 850px;
+                    width: 90%;
                     margin: 0;
                 }
                 .bottom{

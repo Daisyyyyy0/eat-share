@@ -419,7 +419,6 @@ main #kitchen .shop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
 }
 
 main #kitchen .shop .introduce1 {
@@ -436,8 +435,8 @@ main #kitchen .shop .introduce3 {
 
 main #kitchen .shop .shop-introduce {
   border-radius: 5px;
-  width: 900px;
-  height: 180px;
+  width: 75%;
+  height: 80%;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +458,7 @@ main #kitchen .shop .shop-introduce .place {
 
 main #kitchen .shop .shop-introduce p {
   font-size: 20px;
-  width: 850px;
+  width: 90%;
   margin: 0;
 }
 
