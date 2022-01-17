@@ -126,6 +126,286 @@ main #choice .join .letter {
   background-color: #E0AB77;
 }
 
+main #information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+main #information .container1 {
+  margin-top: 80px;
+  position: relative;
+}
+
+main #information .container1 .row .news {
+  text-align: center;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #information .container1 .row .news .news-box {
+  font-weight: bold;
+  background-color: #EEC7AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65px;
+  height: 100px;
+  position: absolute;
+  top: -20%;
+  left: 5%;
+}
+
+main #information .container1 .row .news .news-context {
+  background-color: rgba(239, 196, 196, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #information .container1 .row .news .news-context .t {
+  width: 80%;
+}
+
+main #information .container1 .row .news .news-context .t thead {
+  line-height: 2.5;
+}
+
+main #information .container1 .row .news .news-context .t tbody .row {
+  color: white;
+  background-color: #DA7569;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #information .container1 .row .news .news-context .t tbody .row3 {
+  margin-bottom: 10px;
+}
+
+main #information .container1 .row .advertise .swiper {
+  height: 251px;
+}
+
+main #information .container2 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+main #information .container2 .row2 .rules {
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #information .container2 .row2 .rules .box {
+  background-color: #EEC7AE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 65px;
+  height: 100px;
+  position: absolute;
+}
+
+main #information .container2 .row2 .rules .price {
+  top: 10%;
+  left: -2%;
+}
+
+main #information .container2 .row2 .rules .time {
+  top: 55%;
+  left: -2%;
+}
+
+main #information .container2 .row2 .rules .rules-context {
+  background-color: #EAA69D;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-price {
+  padding: 40px 0 26px 0;
+  margin-bottom: 26px;
+  width: 75%;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-price p {
+  margin: 0;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  margin-bottom: 40px;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time .rules-time1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+main #information .container2 .row2 .rules .rules-context .rules-time .rules-time1 .white-box {
+  background-color: #E5E5E5;
+  width: 53px;
+  border-radius: 5px;
+}
+
+main #information .container2 .row2 .member {
+  font-size: 24px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #information .container2 .row2 .member .member-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #EEC7AE;
+  width: 100%;
+}
+
+main #information .container2 .row2 .member .member-title {
+  background-color: #E8DBCC;
+  width: 150px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0 20px 0;
+}
+
+main #information .container2 .row2 .member .member-context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+main #information .container2 .row2 .member .member-context .member-card {
+  text-align: center;
+}
+
+main #information .container2 .row2 .member .member-context .member-card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+main #how-to-use {
+  background-image: url(../image/index_bg.png);
+  color: #333;
+  text-align: center;
+}
+
+main #how-to-use .title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 75px;
+  padding-top: 75px;
+}
+
+main #how-to-use .row .col .stap-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #how-to-use .row .col .stap-pic {
+  position: relative;
+  left: 3%;
+  bottom: 16%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main #how-to-use .row .col .stap-pic img {
+  width: 170px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+main #how-to-use .row .col .stap-arrow {
+  position: relative;
+  left: 60%;
+  bottom: 130px;
+  font-size: 36px;
+}
+
 main #kitchen {
   width: 100vw;
   height: 1200px;
@@ -154,7 +434,6 @@ main #kitchen .shop {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1200px;
 }
 
 main #kitchen .shop .introduce1 {
@@ -171,8 +450,8 @@ main #kitchen .shop .introduce3 {
 
 main #kitchen .shop .shop-introduce {
   border-radius: 5px;
-  width: 900px;
-  height: 180px;
+  width: 75%;
+  height: 80%;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -184,6 +463,7 @@ main #kitchen .shop .shop-introduce {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
 }
 
 main #kitchen .shop .shop-introduce .place {
@@ -193,7 +473,7 @@ main #kitchen .shop .shop-introduce .place {
 
 main #kitchen .shop .shop-introduce p {
   font-size: 20px;
-  width: 850px;
+  width: 90%;
   margin: 0;
 }
 

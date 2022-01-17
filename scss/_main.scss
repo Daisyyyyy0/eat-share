@@ -58,7 +58,216 @@ main{
 
     
     }
+    // 平台資訊
+    #information{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        .container1{
+            margin-top: 80px;
+            position: relative;
+            .row{               
+                .news{       
+                    text-align: center;
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;                 
+                    .news-box{
+                        font-weight: bold;
+                        background-color: $orangeColor;
+                        display: flex;
+                        align-items: center;
+                        width: 65px;
+                        height: 100px;
+                        position: absolute;
+                        top: -20%;
+                        left: 5%;
+                    }
+                    .news-context{
+                        // background-color: $pinkColor;
+                        background-color:rgba(239,196,196,0.5); 
+                        display: flex;
+                        justify-content: center;
+                        align-items: center; 
+                        //    height: 250px;
+                        width: 100%;
+                        .t{ 
+                            width: 80%;
+                            thead{
+                                line-height: 2.5;                              
+                            }
+                            tbody{
+                                .row{
+                                    color: white;
+                                    background-color: $redColor;
+                                    border-radius: 50%;
+                                    width: 50px;
+                                    height: 50px;
+                                    margin-top: 10px;
+                                    margin-right: 5px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;                                 
+                                }
+                                .row3{
+                                    margin-bottom: 10px;
+                                }
+                                
+                            }
+                        }
 
+                    }
+                }
+                .advertise{
+                    .swiper{
+                        height: 251px;
+                    }
+                   
+                }
+            }
+            
+        }
+        .container2{
+            position: relative;
+            margin-bottom: 40px;
+            .row2{
+                .rules{
+                    font-size: 24px;
+                    font-weight: bold;
+                    display: flex;
+                    .box {
+                        background-color: $orangeColor;
+                        display: flex;
+                        align-items: center;                     
+                        text-align: center;
+                        width: 65px;
+                        height: 100px;
+                        position: absolute;
+                    }
+                    .price{
+                        top: 10%;
+                        left: -2%;
+                    }
+                    .time{
+                        top: 55%;
+                        left: -2%;
+                    }
+                    .rules-context{
+                        background-color: #EAA69D;
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 100%;
+                        .rules-price{
+                            padding: 40px 0 26px 0;
+                            margin-bottom: 26px;
+                            width: 75%;
+                           p{
+                               margin: 0;
+                           }
+                        }
+                        .rules-time{
+                            display: flex;
+                            flex-direction: column;
+                            row-gap: 10px; 
+                            margin-bottom: 40px;
+                            .rules-time1{
+                                display: flex;
+                                column-gap: 10px;                                
+                                .white-box{
+                                    background-color: #E5E5E5;
+                                    width: 53px;
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                        
+
+                    }
+                }
+                .member{
+                    font-size: 24px;
+                    font-weight: bold;
+                    display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+                    .member-section{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: $orangeColor;  
+                        width: 100%;
+                    }
+                   
+                    .member-title{
+                        background-color: #E8DBCC;
+                        width: 150px;
+                        height: 45px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 15px 0 20px 0;
+                    }
+                    .member-context{
+                        display: flex;
+                        flex-wrap: wrap;
+                        column-gap: 30px;
+                        .member-card{
+                            // display: flex;
+                            // flex-direction: column;
+                            // flex-wrap: wrap;
+                            text-align: center;
+                            img{
+                                width: 150px;
+                                height: 150px;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // 使用流程
+    #how-to-use{
+        // height: 100vh;
+        background-image: url(../image/index_bg.png);
+        color: $textColor;
+        text-align: center;
+        .title{
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 75px;
+            padding-top: 75px;
+        }
+        .row{   
+            .col{
+                .stap-number{
+                    display: flex;
+                }
+                .stap-pic{
+                    position: relative;
+                    left: 3%;
+                    bottom: 16%;
+                    font-size: 24px;
+                    font-weight: bold;
+                    img{
+                        width: 170px;
+                        height: 150px; 
+                        margin-bottom: 20px;
+                    }  
+                }
+                .stap-arrow{
+                    position: relative;
+                    left: 60%;
+                    bottom: 130px;
+                    font-size: 36px;
+                }
+            }
+        }      
+        
+    }
     // 商家介紹
     #kitchen{
         width: 100vw;
@@ -76,7 +285,6 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 1200px;
             .introduce1{
                 border: 3px solid $greenColor; 
             }
@@ -88,12 +296,13 @@ main{
             }
             .shop-introduce{              
                 border-radius: 5px;
-                width: 900px;
-                height: 180px;
+                width: 75%;
+                height: 80%;
                 padding: 15px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                background-color: white;
 
                 .place{
                     font-size: 24px;
@@ -101,7 +310,7 @@ main{
                 }
                 p{
                     font-size: 20px;
-                    width: 850px;
+                    width: 90%;
                     margin: 0;
                 }
                 .bottom{
