@@ -16,6 +16,10 @@ main{
             border-radius: 10px;
             margin: auto;
             padding: 20px;
+            transition: all .3s;
+            &:hover{
+
+            }
             .img{
                 width: 290px;
                 img{
@@ -42,14 +46,26 @@ main{
         }
         .fire{
             border: 5px solid $purpleColor;
-            margin-right: 10px;
+            margin-right: 20px;
+            &:hover{
+                border: 5px solid $purple_darker;
+                .letter{
+                    background-color: $purple_darker;
+                }
+            }
             .letter{
                 background-color: $purpleColor;
             }
         }
         .join{
             border: 5px solid $teaColor;
-            margin-left: 10px;
+            margin-left: 20px;
+            &:hover{
+                border: 5px solid $tea_darker;
+                .letter{
+                    background-color: $tea_darker;
+                }
+            }
             .letter{
                 background-color: $teaColor;
             }
@@ -270,7 +286,7 @@ main{
     }
     // 商家介紹
     #kitchen{
-        width: 100vw;
+        // width: 100vw;
         height: 1200px;
         background-color: $themeColor;
         color: $textColor;

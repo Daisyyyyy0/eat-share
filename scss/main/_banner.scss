@@ -1,6 +1,6 @@
 #banner{
-    padding: 6rem 0;
-    height: 500px;
+    padding: 10rem 0 20rem;
+    // height: 1000px;
     .container{
         display: flex;
         justify-content: center;
@@ -16,6 +16,11 @@
             margin-bottom: 2rem;
             text-align: center;
             color: #555;
+            position: relative;
+        }
+        .p1{
+            // margin-top: 10rem;
+            top: 0;
         }
     }
     .floating{
@@ -33,7 +38,7 @@
     .img2{
         top: -2rem;
         right: 10%;
-        transform: rotateZ(10deg);
+        transform: rotateZ(14deg);
         img{
             height: 140px;
         }

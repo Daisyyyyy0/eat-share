@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/all.css">
     <title>一起吃飯</title>
 </head>
@@ -20,8 +22,15 @@
                 <a class="navbar-brand" href="/index.html">
                     <img src="./image/logo.png" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'>
+                            <path stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10'
+                                stroke-width='2' d='M4 7h22M4 15h22M4 23h22' />
+                        </svg>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
@@ -46,19 +55,23 @@
         <section id="banner">
             <div class="container">
                 <div class="text">
-                    <p class="1">是否燒著一手好菜的你，此刻找不到人和你一同分享?</p>
-                    <p class="2">每天都不知道晚餐要吃什麼了嗎?</p>
-                    <p class="3">覺得很孤單，想找回和家人一起吃飯的感覺嗎?</p>
-                    <p class="4">你想念媽媽的晚餐嗎？</p>
+                    <p class="p1" data-aos="fade-up" data-aos-duration="1500">是否燒著一手好菜的你，此刻找不到人和你一同分享?</p>
+                    <p class="p2" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">每天都不知道晚餐要吃什麼了嗎?</p>
+                    <p class="p3" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="2000">
+                        覺得很孤單，想找回和家人一起吃飯的感覺嗎?</p>
+                    <p class="p4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="3000">你想念媽媽的晚餐嗎？</p>
                 </div>
                 <div class="floating img1">
-                    <img src="./image/banner1.png" alt="">
+                    <img src="./image/banner1.png" alt="" data-aos="fade-down-right" data-aos-duration="600"
+                        data-aos-delay="500">
                 </div>
                 <div class="floating img2">
-                    <img src="./image/banner2.png" alt="">
+                    <img src="./image/banner2.png" alt="" data-aos="fade-down-left" data-aos-duration="600"
+                        data-aos-anchor-placement="top-bottom" data-aos-delay="1500">
                 </div>
                 <div class="floating img3">
-                    <img src="./image/banner3.png" alt="">
+                    <img src="./image/banner3.png" alt="" data-aos="fade-up-left" data-aos-duration="600"
+                        data-aos-delay="2300">
                 </div>
 
             </div>
@@ -66,27 +79,22 @@
 
         <section id="pain-point">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="pain">
-                            <img src="./image/pain1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="pain">
-                            <img src="./image/pain2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>  
+                <div class="pain" data-aos="fade-right" data-aos-duration="1200">
+                    <img src="./image/pain1.jpg" alt="">
+                </div>
+                <div class="pain" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="500">
+                    <img src="./image/pain2.jpg" alt="">
+                </div>
+
             </div>
         </section>
 
-        <section id="belief">
+        <section id="belief" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <div class="container">
                 <div class="bigImg">
                     <img src="./image/belief.png" alt="">
                 </div>
-                <div class="descWrap">
+                <div class="descWrap p-3">
                     <div class="h3">
                         | 我們的理念
                     </div>
@@ -132,34 +140,34 @@
                         <div class="news-context">
                             <table class="t">
                                 <thead style="border-bottom: 1px #DA7569 solid">
-                                  <tr>
-                                    <th scope="col"></th>
-                                    <th scope="col">發布時間</th>
-                                    <th scope="col">標題</th>
-                                    <th scope="col">點閱人數</th>
-                                  </tr>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">發布時間</th>
+                                        <th scope="col">標題</th>
+                                        <th scope="col">點閱人數</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                  <tr>
-                                    <th scope="row" class="row">1</th>
-                                    <td>2022-01-10</td>
-                                    <td>共餐平台網站建立</td>
-                                    <td>600</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row" class="row">2</th>
-                                    <td>2022-01-09</td>
-                                    <td>[徵求開伙人&搭伙人]</td>
-                                    <td>1262</td>
-                                  </tr>
-                                  <tr>
-                                    <th scope="row" class="row row3">3</th>
-                                    <td>2022-01-08</td>
-                                    <td>家庭廚師來領獎!</td>
-                                    <td>1735</td>
-                                  </tr>
+                                    <tr>
+                                        <th scope="row" class="row">1</th>
+                                        <td>2022-01-10</td>
+                                        <td>共餐平台網站建立</td>
+                                        <td>600</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="row">2</th>
+                                        <td>2022-01-09</td>
+                                        <td>[徵求開伙人&搭伙人]</td>
+                                        <td>1262</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="row row3">3</th>
+                                        <td>2022-01-08</td>
+                                        <td>家庭廚師來領獎!</td>
+                                        <td>1735</td>
+                                    </tr>
                                 </tbody>
-                              </table>
+                            </table>
                         </div>
                     </div>
                     <div class="col-4 advertise">
@@ -168,20 +176,20 @@
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                <img src="./image/pic/member-pic1.png" class="d-block w-100" alt="...">
+                                    <img src="./image/pic/member-pic1.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="swiper-slide">
-                                <img src="./image/pic/member-pic2.png" class="d-block w-100" alt="...">
+                                    <img src="./image/pic/member-pic2.png" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="swiper-slide">
-                                <img src="./image/pic/member-pic3.png" class="d-block w-100" alt="...">
-                                </div>                             
-                            </div>                 
+                                    <img src="./image/pic/member-pic3.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
                             <!-- If we need navigation buttons -->
                             <div class="swiper-button-prev"></div>
                             <div class="swiper-button-next"></div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
             <div class="container container2">
@@ -230,8 +238,8 @@
                                     <img src="./image/pic/member-pic4.png" alt="">
                                     <p>Daisy</p>
                                 </div>
-                            </div>    
-                        </div>                      
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,22 +249,22 @@
             <div class="container">
                 <div class="title">使用流程</div>
                 <div class="row">
-                    <div class="col">                       
+                    <div class="col">
                         <div class="stap-number">
                             <img src="./image/pic/stap-number1.png" alt="">
                         </div>
-                        <div class="stap-pic" >
-                            <img src="./image/pic/stap1-pic.png" alt=""> 
+                        <div class="stap-pic">
+                            <img src="./image/pic/stap1-pic.png" alt="">
                             <div class="stap-text">
                                 <p> 註冊會員 </p>
-                                <p>填寫基本資料</p>                                             
-                            </div>                          
-                        </div> 
+                                <p>填寫基本資料</p>
+                            </div>
+                        </div>
                         <div class="stap-arrow">
-                           <i class="fas fa-caret-right"></i> 
-                        </div>                                              
-                    </div>                    
-                    <div class="col">                       
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
+                    <div class="col">
                         <div class="stap-number">
                             <img src="./image/pic/stap-number2.png" alt="">
                         </div>
@@ -264,12 +272,12 @@
                             <img src="./image/pic/stap2.png" alt="">
                             <p>登入會員</p>
                             <p>啟動後臺</p>
-                        </div> 
+                        </div>
                         <div class="stap-arrow">
-                            <i class="fas fa-caret-right"></i> 
-                        </div>  
+                            <i class="fas fa-caret-right"></i>
+                        </div>
                     </div>
-                    <div class="col">                       
+                    <div class="col">
                         <div class="stap-number">
                             <img src="./image/pic/stap-number3.png" alt="">
                         </div>
@@ -277,12 +285,12 @@
                             <img src="./image/pic/stap3.png" alt="">
                             <p>搜尋店家</p>
                             <p>選擇時段 </p>
-                        </div> 
+                        </div>
                         <div class="stap-arrow">
-                            <i class="fas fa-caret-right"></i> 
-                        </div>                       
+                            <i class="fas fa-caret-right"></i>
+                        </div>
                     </div>
-                    <div class="col">                       
+                    <div class="col">
                         <div class="stap-number">
                             <img src="./image/pic/stap-number4.png" alt="">
                         </div>
@@ -292,22 +300,22 @@
                             <p>享用美食</p>
                         </div>
                         <div class="stap-arrow">
-                            <i class="fas fa-caret-right"></i> 
-                        </div> 
+                            <i class="fas fa-caret-right"></i>
+                        </div>
                     </div>
-                    <div class="col">                       
+                    <div class="col">
                         <div class="stap-number">
                             <img src="./image/pic/stap-number5.png" alt="">
                         </div>
                         <div class="stap-pic">
                             <img src="./image/pic/stap5.png" alt="">
                             <p>選擇現金</p>
-                            <p>或綁定金流付款</p>    
-                        </div>                        
-                    </div>         
+                            <p>或綁定金流付款</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section> 
+        </section>
         <!-- 商家介紹 -->
         <section id="kitchen">
             <div class="container">
@@ -374,35 +382,35 @@
         <section id="partner">
             <div class="container">
                 <P>我們的夥伴</P>
-              </div>
-              <div class="location">
+            </div>
+            <div class="location">
                 <div class="city green">
-                  <div class="name">台北市</div>
-                  <p>已累積</p>
-                  <p>11間</p>
+                    <div class="name">台北市</div>
+                    <p>已累積</p>
+                    <p>11間</p>
                 </div>
                 <div class="city orange">
-                  <div class="name">新北市</div>
-                  <p>已累積</p>
-                  <p>11間</p>
+                    <div class="name">新北市</div>
+                    <p>已累積</p>
+                    <p>11間</p>
                 </div>
                 <div class="city red">
-                  <div class="name">台中市</div>
-                  <p>已累積</p>
-                  <p>11間</p>
+                    <div class="name">台中市</div>
+                    <p>已累積</p>
+                    <p>11間</p>
                 </div>
                 <div class="city blue">
-                  <div class="name">台南市</div>
-                  <p>已累積</p>
-                  <p>11間</p>
+                    <div class="name">台南市</div>
+                    <p>已累積</p>
+                    <p>11間</p>
                 </div>
                 <div class="city yellow">
-                  <div class="name">高雄市</div>
-                  <p>已累積</p>
-                  <p>11間</p>
+                    <div class="name">高雄市</div>
+                    <p>已累積</p>
+                    <p>11間</p>
                 </div>
-              </div>
-              <p class="pill">立即加入我們</p>
+            </div>
+            <p class="pill">立即加入我們</p>
         </section>
 
         <a href="#" id="big-btn"></a>
@@ -501,6 +509,11 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!-- 輪播區塊 JS -->
     <script src="./JS/swiper.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

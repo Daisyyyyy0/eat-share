@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  padding-top: 5rem;
+  padding-top: 4.5rem;
 }
 
 header {
@@ -19,6 +19,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  -webkit-box-shadow: 5px 5px 15px rgba(195, 184, 171, 0.3);
+          box-shadow: 5px 5px 15px rgba(195, 184, 171, 0.3);
 }
 
 .navbar {
@@ -27,11 +29,11 @@ header {
 }
 
 .navbar .navbar-brand {
-  padding: 0.4rem 0;
+  padding: 0.25rem 0;
 }
 
 .navbar .navbar-brand img {
-  height: 4.25rem;
+  height: 4rem;
 }
 
 .navbar .navbar-toggler {
@@ -40,6 +42,10 @@ header {
   border: unset;
   -webkit-box-shadow: unset;
           box-shadow: unset;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url(/image/menu.png);
 }
 
 .navbar .navbar-nav .nav-item {
@@ -83,6 +89,8 @@ main #choice .acc-btn {
   border-radius: 10px;
   margin: auto;
   padding: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 main #choice .acc-btn .img {
@@ -115,7 +123,15 @@ main #choice .acc-btn .letter {
 
 main #choice .fire {
   border: 5px solid #BC7C96;
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+main #choice .fire:hover {
+  border: 5px solid #9C506F;
+}
+
+main #choice .fire:hover .letter {
+  background-color: #9C506F;
 }
 
 main #choice .fire .letter {
@@ -124,7 +140,15 @@ main #choice .fire .letter {
 
 main #choice .join {
   border: 5px solid #E0AB77;
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+main #choice .join:hover {
+  border: 5px solid #ba8a63;
+}
+
+main #choice .join:hover .letter {
+  background-color: #ba8a63;
 }
 
 main #choice .join .letter {
@@ -412,7 +436,6 @@ main #how-to-use .row .col .stap-arrow {
 }
 
 main #kitchen {
-  width: 100vw;
   height: 1200px;
   background-color: #F2E4D4;
   color: #333;
@@ -635,8 +658,7 @@ main #kitchen .shop .shop-introduce .bottom a {
 }
 
 #banner {
-  padding: 6rem 0;
-  height: 500px;
+  padding: 10rem 0 20rem;
 }
 
 #banner .container {
@@ -663,6 +685,11 @@ main #kitchen .shop .shop-introduce .bottom a {
   margin-bottom: 2rem;
   text-align: center;
   color: #555;
+  position: relative;
+}
+
+#banner .text .p1 {
+  top: 0;
 }
 
 #banner .floating {
@@ -684,8 +711,8 @@ main #kitchen .shop .shop-introduce .bottom a {
 #banner .img2 {
   top: -2rem;
   right: 10%;
-  -webkit-transform: rotateZ(10deg);
-          transform: rotateZ(10deg);
+  -webkit-transform: rotateZ(14deg);
+          transform: rotateZ(14deg);
 }
 
 #banner .img2 img {
@@ -703,13 +730,17 @@ main #kitchen .shop .shop-introduce .bottom a {
   height: 100px;
 }
 
+#pain-point {
+  padding: 1rem 0 4rem;
+}
+
 #pain-point .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -717,18 +748,24 @@ main #kitchen .shop .shop-introduce .bottom a {
   max-width: 1140px;
 }
 
+#pain-point .container .row {
+  width: 100%;
+}
+
 #pain-point .pain {
   border: 6px solid #DA7569;
   border-radius: 8px;
+  width: calc(50% - 2rem);
 }
 
 #pain-point .pain img {
   width: 100%;
-  height: 320px;
+  height: 336px;
+  text-align: center;
 }
 
 #belief {
-  padding: 2rem 0;
+  padding: 4rem 0 8rem;
 }
 
 #belief .container {

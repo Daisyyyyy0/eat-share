@@ -4,17 +4,18 @@ header{
   left: 0;
   width: 100%;
   z-index: 100;
+  
+  box-shadow: 5px 5px 15px rgba(195,184,171,.3);
 }
 
 .navbar {
     padding: 0;
     background-color: white;
 
-
   .navbar-brand{
-    padding: 0.4rem 0;
+    padding: 0.25rem 0;
     img{
-      height: 4.25rem;
+      height: 4rem;
     }
   }
   .navbar-toggler{
@@ -23,6 +24,12 @@ header{
     outline: unset;
     border: unset;
     box-shadow: unset;
+    .navbar-toggler-icon{
+      background-image: url(/image/menu.png);
+    }
+    // svg{
+    //   color: $redColor;
+    // }
   }
   .navbar-nav{
     .nav-item {
