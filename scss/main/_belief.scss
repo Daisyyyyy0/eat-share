@@ -1,0 +1,20 @@
+#belief{
+    padding: 2rem 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        max-width: 1140px;
+    }
+    .bigImg{
+        max-width: 780px;
+        img{
+            width: 100%;
+        }
+    }
+    .descWrap{
+        background-color: white;
+    }
+}

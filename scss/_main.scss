@@ -355,6 +355,66 @@ main{
             text-align: center;
             align-items: center;
         }
+        .location{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .city{
+                width: 150px;
+                height: 200px;
+                border-radius: 20px;
+                margin: 0px 10px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .name{
+                    width: 80px;
+                    height: 30px;
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    left: calc(50% - 40px);
+                    top: -15px;
+                    
+            
+                }
+            }
+            .green{
+                border: 2px solid green;
+                .name{
+                    background-color: green;
+                }
+            }
+            .orange{
+                border: 2px solid orange;
+                .name{
+                    background-color: orange;
+                }
+            }
+            .red{
+                border: 2px solid red;
+                .name{
+                    background-color: red;
+                }
+            }
+            .blue{
+                border: 2px solid blue;
+                .name{
+                    background-color: blue;
+                }
+            }
+            .yellow{
+                border: 2px solid yellow;
+                .name{
+                    background-color: yellow;
+                }
+            }
+        
+        }
     } 
 
     .pill{
@@ -370,64 +430,5 @@ main{
         font-size:75px;
         color: aliceblue;
     }
-    .location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .city{
-        width: 150px;
-        height: 200px;
-        border-radius: 20px;
-        margin: 0px 10px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .name{
-            width: 80px;
-            height: 30px;
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            left: calc(50% - 40px);
-            top: -15px;
-            
-    
-        }
-    }
-    .green{
-        border: 2px solid green;
-        .name{
-            background-color: green;
-        }
-    }
-    .orange{
-        border: 2px solid orange;
-        .name{
-            background-color: orange;
-        }
-    }
-    .red{
-        border: 2px solid red;
-        .name{
-            background-color: red;
-        }
-    }
-    .blue{
-        border: 2px solid blue;
-        .name{
-            background-color: blue;
-        }
-    }
-    .yellow{
-        border: 2px solid yellow;
-        .name{
-            background-color: yellow;
-        }
-    }
 
-}
 }
