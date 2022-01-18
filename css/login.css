@@ -27,29 +27,61 @@
 }
 
 .login .content .text {
-  font-size: 24px;
+  font-weight: bold;
   width: 100%;
 }
 
 .login .content .text .title {
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 36px;
   margin-bottom: 5%;
 }
 
 .login .content .text .email {
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
 .login .content .text .email input {
   width: 70%;
-  height: 40px;
+  height: 50px;
   border: 3px #DA7569 solid;
+}
+
+.login .content .text .password {
+  font-size: 20px;
 }
 
 .login .content .text .password input {
   width: 70%;
-  height: 40px;
+  height: 50px;
   border: 3px #DA7569 solid;
+}
+
+.login .content .text .button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px 0 15px 0;
+}
+
+.login .content .text .button-box button {
+  font-weight: bold;
+  color: white;
+}
+
+.login .content .text .bottom {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login .content .text .bottom .join-us {
+  color: #CD2424;
+  margin-left: 10px;
 }
 /*# sourceMappingURL=login.css.map */
