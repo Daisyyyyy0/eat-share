@@ -164,8 +164,13 @@
     font-size: 20px;
     margin-bottom: 30px;
   }
+  .login .content .text .email {
+    position: relative;
+  }
   .login .content .text .email img {
     display: block;
+    position: absolute;
+    margin-top: 1%;
     margin-left: 85%;
   }
   .login .content .text .email input {
@@ -174,12 +179,16 @@
     border-top: 3px;
     border-left: 3px;
     border-right: 3px;
-    height: 1px;
     margin-bottom: 30px;
     width: 90%;
   }
+  .login .content .text .password {
+    position: relative;
+  }
   .login .content .text .password img {
     display: block;
+    position: absolute;
+    margin-top: 1%;
     margin-left: 85%;
   }
   .login .content .text .password input {
@@ -188,7 +197,6 @@
     border-top: 3px;
     border-left: 3px;
     border-right: 3px;
-    height: 1px;
     width: 90%;
   }
   .login .content .text .button-box {
@@ -227,13 +235,13 @@
     display: none;
   }
   .login .content .text .email img {
-    margin-left: auto;
+    margin-left: 95%;
   }
   .login .content .text .email input {
     width: 100%;
   }
   .login .content .text .password img {
-    margin-left: auto;
+    margin-left: 95%;
   }
   .login .content .text .password input {
     width: 100%;

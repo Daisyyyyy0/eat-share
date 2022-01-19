@@ -124,8 +124,11 @@
                         }
                 }
                 .email{
+                    position: relative;
                     img{
                         display: block;
+                        position: absolute;
+                        margin-top: 1%;
                         margin-left: 85%;
                     }
                     input{
@@ -134,14 +137,16 @@
                         border-top: 3px;
                         border-left: 3px;
                         border-right: 3px;
-                        height: 1px;
                         margin-bottom: 30px;
                         width: 90%;
                     }   
                 }
                 .password{
+                    position: relative;
                     img{
                         display: block;
+                        position: absolute;
+                        margin-top: 1%;
                         margin-left: 85%;
                     }
                     input{
@@ -150,7 +155,6 @@
                         border-top: 3px;
                         border-left: 3px;
                         border-right: 3px;
-                        height: 1px;
                         width: 90%;
                     }   
                 }
@@ -188,7 +192,7 @@
             .text{
                 .email{
                     img{
-                        margin-left: auto;
+                        margin-left: 95%;
                     }
                     input{
                         width: 100%;
@@ -196,7 +200,7 @@
                 }
                 .password{
                     img{
-                        margin-left: auto;
+                        margin-left: 95%;
                     }
                     input{
                         width: 100%;
