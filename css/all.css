@@ -46,7 +46,7 @@ header {
 }
 
 .navbar .navbar-toggler .navbar-toggler-icon {
-  background-image: url(/image/menu.png);
+  background-image: url(../image/menu.png);
 }
 
 .navbar .navbar-nav .nav-item {
@@ -118,11 +118,14 @@ main #choice .acc-btn {
   transition: all .3s;
 }
 
+main #choice .acc-btn * {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 main #choice .acc-btn:hover img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  -webkit-transition: all .3s;
-  transition: all .3s;
 }
 
 main #choice .acc-btn .img {
@@ -566,6 +569,7 @@ main #kitchen .shop .shop-introduce .bottom a {
 
 #banner {
   padding: 10rem 0 20rem;
+  height: 5000px;
 }
 
 #banner .container {
@@ -578,7 +582,10 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 200px;
+  left: 0;
 }
 
 #banner .text {
@@ -599,9 +606,19 @@ main #kitchen .shop .shop-introduce .bottom a {
   top: 0;
 }
 
+#banner .text .p2 {
+  -webkit-transition-delay: 1500ms;
+          transition-delay: 1500ms;
+}
+
+#banner .text .p3 {
+  -webkit-transition-delay: 3000ms;
+          transition-delay: 3000ms;
+}
+
 #banner .text .p4 {
-  -webkit-transition-delay: 5000ms;
-          transition-delay: 5000ms;
+  -webkit-transition-delay: 4500ms;
+          transition-delay: 4500ms;
 }
 
 #banner .floating {
