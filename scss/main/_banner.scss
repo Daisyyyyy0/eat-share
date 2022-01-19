@@ -1,14 +1,19 @@
 #banner{
     padding: 10rem 0 20rem;
-    // height: 1000px;
+
+    height: 5000px;
     .container{
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
+        // position: relative;
+        position: sticky;
+        top: 200px;
+        left: 0;
     }
     .text{
         z-index: 3;
+        // height: 800px;
         p{
             font-size: 1.25rem;
             font-weight: 600; 
@@ -21,6 +26,15 @@
         .p1{
             // margin-top: 10rem;
             top: 0;
+        }
+        .p2{
+            transition-delay: 1500ms;
+        }
+        .p3{
+            transition-delay: 3000ms;
+        }
+        .p4{
+            transition-delay: 4500ms;
         }
     }
     .floating{

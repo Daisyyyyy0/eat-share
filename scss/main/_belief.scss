@@ -1,12 +1,12 @@
 #belief{
     padding: 4rem 0 8rem;
     .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         max-width: 1140px;
+        position: relative;
+        height: 800px;
     }
     .bigImg{
         max-width: 780px;
@@ -16,5 +16,10 @@
     }
     .descWrap{
         background-color: white;
+        width: 576px;
+        height: 640px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
