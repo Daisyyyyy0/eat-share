@@ -1,0 +1,156 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background-color: #EEC7A0;
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 24px;
+}
+
+.register form .register-title {
+  text-align: center;
+}
+
+.register form .register-title p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.register form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register form label {
+  width: 500px;
+  font-weight: bold;
+}
+
+.register form input {
+  width: 500px;
+  background-color: #F2E4D4;
+  border: 3px #DA7569 solid;
+}
+
+.register form p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register form .button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.register form .button button {
+  width: 100px;
+  height: 50px;
+  background-color: #DA7569;
+  border: 3px #CD2424 solid;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.register form .button img {
+  width: 500px;
+  height: 10px;
+}
+
+.register .bottom {
+  font-weight: bold;
+  font-size: 24px;
+  width: 500px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.register .bottom .bottom-word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register .bottom .account {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.register .bottom .log-in {
+  color: #CD2424;
+}
+
+@media screen and (max-width: 600px) {
+  .register form label {
+    width: 80%;
+  }
+  .register form input {
+    width: 80%;
+  }
+  .register form .button img {
+    width: 80%;
+  }
+  .register .bottom {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .bottom-word {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .account {
+    margin-right: 0px;
+  }
+  .log-in {
+    margin-left: 10px;
+  }
+}
+/*# sourceMappingURL=register.css.map */
