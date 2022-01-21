@@ -5,7 +5,7 @@ main{
 
     #choice{
         background-image: url(../image/index_bg.png);
-        padding: 60px 0;
+        padding: 4rem 0;
 
         .acc-btn{
             // width: 450px;
@@ -82,6 +82,7 @@ main{
     }
     // 平台資訊
     #information{
+        padding: 4rem 0;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
@@ -253,22 +254,21 @@ main{
     }
     // 使用流程
     #how-to-use{
-        // height: 100vh;
+        padding-top: 4rem;
         background-image: url(../image/index_bg.png);
         color: $textColor;
         text-align: center;
         .title{
             font-size: 36px;
             font-weight: bold;
-            margin-bottom: 75px;
-            padding-top: 75px;
+            margin-bottom: 4rem;
         }
         .row{   
             .col{
-                .stap-number{
+                .step-number{
                     display: flex;
                 }
-                .stap-pic{
+                .step-pic{
                     position: relative;
                     left: 3%;
                     bottom: 16%;
@@ -280,7 +280,7 @@ main{
                         margin-bottom: 20px;
                     }  
                 }
-                .stap-arrow{
+                .step-arrow{
                     position: relative;
                     left: 60%;
                     bottom: 130px;
@@ -288,25 +288,42 @@ main{
                 }
             }
         }      
-        
+        @media screen and (max-width:1200px) {
+            .row{
+                flex-direction:column;
+                // justify-content: center;
+                align-items: center;
+                .step{
+                    width: 300px;
+                    position: relative;
+                    .step-pic{
+                        position: absolute;
+                        top: 3rem;
+                        left: 3.5rem;
+                    }
+                }
+            }
+        }
     }
     // 商家介紹
     #kitchen{
-        // width: 100vw;
-        height: 1200px;
+        padding: 4rem 0;
+        // height: 1200px;
         background-color: $themeColor;
         color: $textColor;
 
-        .kitchen-title{
+        .kitchen-heading{
             font-size: 36px;
             font-weight: bold;
             display: flex;
             justify-content: center;
+            margin-bottom: 4rem;
         }
         .shop{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 1rem;
             .introduce1{
                 border: 3px solid $greenColor; 
             }
@@ -326,7 +343,7 @@ main{
                 justify-content: space-between;
                 background-color: white;
 
-                .place{
+                .title{
                     font-size: 24px;
                     font-weight: bold;
                 }

@@ -1,7 +1,21 @@
 footer {
     background-color: #DA7569;
+    padding-top: 1.5rem;
+
+    .social-media{
+      width: 150px;
+      justify-content: space-between;
+      a{
+        display:inline-block;
+        width: 30%;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .copyright{
+      background-color: $greenColor;
+    }
   }
   
-  .group-icon {
-    margin-left: 10px;
-  }
+  
