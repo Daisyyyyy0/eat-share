@@ -94,11 +94,39 @@ footer {
   padding-top: 1.5rem;
 }
 
+footer .col-md-4:first-child {
+  padding-left: 2rem;
+}
+
+footer .contactWrap i.fas {
+  margin-right: 0.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  footer .contactWrap i.fas {
+    margin-right: 1rem;
+  }
+}
+
+footer .lilicoco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 footer .social-media {
-  width: 150px;
+  width: 180px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: .75rem;
 }
 
 footer .social-media a {
@@ -107,7 +135,7 @@ footer .social-media a {
 }
 
 footer .social-media a img {
-  width: 100%;
+  width: 2.5rem;
 }
 
 footer .copyright {
@@ -496,6 +524,10 @@ main #how-to-use .row .col .step-arrow {
 }
 
 @media screen and (max-width: 1200px) {
+  main #how-to-use {
+    background-image: none;
+    background-color: #fff;
+  }
   main #how-to-use .row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -510,9 +542,14 @@ main #how-to-use .row .col .step-arrow {
     position: relative;
   }
   main #how-to-use .row .step .step-pic {
-    position: absolute;
-    top: 3rem;
-    left: 3.5rem;
+    top: -5rem;
+    left: 0.5rem;
+  }
+  main #how-to-use .row .step .step-arrow {
+    left: 0;
+    bottom: 4rem;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 }
 
@@ -918,5 +955,297 @@ main #kitchen .shop .shop-introduce .bottom a {
   color: white;
   -webkit-box-shadow: 5px 10px 10px rgba(51, 51, 51, 0.2);
           box-shadow: 5px 10px 10px rgba(51, 51, 51, 0.2);
+}
+
+#kitchen {
+  padding: 4rem 0;
+}
+
+#kitchen .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#kitchen .container .textWrap {
+  text-align: center;
+  max-width: 576px;
+  padding: 1rem;
+}
+
+#kitchen .container .textWrap .kitchen-heading {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+}
+
+#kitchen .container .textWrap .kitchen-heading::before {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: -10%;
+  width: 120%;
+  background-color: #333;
+  height: 14px;
+  border: 6px solid #333;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-top-color: #F2E4D4;
+  border-bottom-color: #F2E4D4;
+}
+
+#kitchen .container .textWrap .desc {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2.5;
+}
+
+#kitchen .container .areaBtnWrap {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+#kitchen .container .areaBtnWrap .area-btn {
+  padding: 1.1875rem 2rem;
+  width: 12.5rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 2.5rem;
+  color: white;
+  -webkit-box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+#kitchen .container .areaBtnWrap .north {
+  background-color: #BC7C96;
+}
+
+#kitchen .container .areaBtnWrap .mid {
+  background-color: #DA7569;
+}
+
+#kitchen .container .areaBtnWrap .south {
+  background-color: #E0AB77;
+}
+
+#location {
+  background-color: #fff;
+  padding: 4rem 0;
+}
+
+#location .north-area .area-title {
+  color: #BC7C96;
+  border: 5px solid #BC7C96;
+}
+
+#location .mid-area .area-title {
+  color: #DA7569;
+  border: 5px solid #DA7569;
+}
+
+#location .south-area .area-title {
+  color: #E0AB77;
+  border: 5px solid #E0AB77;
+}
+
+#location .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+#location .area .area-title {
+  padding: 1.0625rem 2rem;
+  margin-bottom: 2rem;
+  width: 12.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 10px 12px 24px rgba(0, 0, 0, 0.15);
+          box-shadow: 10px 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+#location .area .locationWrap {
+  position: relative;
+}
+
+#location .area .locationWrap::before {
+  content: '';
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  height: 15px;
+  border: 6px solid #333;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+
+#location .area .kitchen-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0rem 4rem;
+  border-bottom: 1px solid #aaa;
+}
+
+#location .area .kitchen-location:last-child {
+  border-bottom: none;
+}
+
+#location .area .kitchen-location-img {
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+}
+
+#location .area .kitchen-location-img img {
+  width: 100%;
+}
+
+#location .area .kitchen-location .textWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 350px);
+}
+
+#location .area .kitchen-location-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+#location .area .kitchen-location-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#location .area .kitchen-location-time .timing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#location .area .kitchen-location-time .weekWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#location .area .kitchen-location-time .weekWrap .week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 75px;
+  height: 3rem;
+  margin-right: .5rem;
+  padding: .125rem .75rem;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #e5e5e5;
+  border-radius: 1.5rem;
+  line-height: 1.125;
+}
+
+#location .area .kitchen-location-time .weekWrap .week .en {
+  font-size: .75rem;
+}
+
+#location .area .kitchen-location-time .meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#location .area .kitchen-location-time .meal > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1rem;
+  text-align: center;
+  background-color: #D9CDBE;
+  line-height: 1.125;
+  font-weight: 600;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+#location .area .kitchen-location-time .meal > * .en {
+  font-size: .75rem;
 }
 /*# sourceMappingURL=all.css.map */

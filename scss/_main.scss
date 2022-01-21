@@ -289,17 +289,22 @@ main{
             }
         }      
         @media screen and (max-width:1200px) {
+            background-image: none;
+            background-color: #fff;
             .row{
                 flex-direction:column;
-                // justify-content: center;
                 align-items: center;
                 .step{
                     width: 300px;
                     position: relative;
                     .step-pic{
-                        position: absolute;
-                        top: 3rem;
-                        left: 3.5rem;
+                        top: -5rem;
+                        left: 0.5rem;
+                    }
+                    .step-arrow{
+                        left: 0;
+                        bottom: 4rem;
+                        transform: rotate(90deg);
                     }
                 }
             }
