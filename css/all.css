@@ -282,7 +282,7 @@ main #information .container1 .row .news .news-box {
   width: 65px;
   height: 100px;
   position: absolute;
-  top: -20%;
+  top: -5%;
   left: 5%;
 }
 
@@ -297,7 +297,14 @@ main #information .container1 .row .news .news-context {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80%;
   width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  main #information .container1 .row .news .news-context {
+    font-size: 16px;
+  }
 }
 
 main #information .container1 .row .news .news-context .t {
@@ -331,8 +338,52 @@ main #information .container1 .row .news .news-context .t tbody .row3 {
   margin-bottom: 10px;
 }
 
+main #information .container1 .row .advertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main #information .container1 .row .advertise .swiper {
-  height: 251px;
+  height: 80%;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-slide {
+  background-color: #BFC783;
+  opacity: 0.9;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-box {
+  height: 80%;
+  background-color: #BFC783;
+  opacity: 0.9;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-button-prev {
+  height: 20px;
+  width: 10px;
+  background-image: url("/image/pic/left.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-button-prev::after {
+  display: none;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-button-next {
+  width: 10px;
+  height: 20px;
+  background-image: url("/image/pic/right.png");
+  background-position: center;
+  background-size: cover;
+}
+
+main #information .container1 .row .advertise .swiper .swiper-button-next::after {
+  content: none;
 }
 
 main #information .container2 {

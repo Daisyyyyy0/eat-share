@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,AAAA,cAAc,CAAA;EACb,eAAe,EAAC,aAAa;CAEhC;;AAGD,AACI,QADI,CACJ,SAAS,CAAA;EACL,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAG1B;;AATL,AAUI,QAVI,CAUJ,KAAK,CAAA;EAED,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CAEtB",
+    "sources": [
+        "../scss/create-partner.scss"
+    ],
+    "names": [],
+    "file": "create-partner.css"
+}

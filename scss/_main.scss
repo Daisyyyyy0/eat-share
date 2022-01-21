@@ -80,6 +80,7 @@ main{
 
     
     }
+    
     // 平台資訊
     #information{
         padding: 4rem 0;
@@ -94,7 +95,7 @@ main{
                     text-align: center;
                     font-size: 24px;
                     display: flex;
-                    align-items: center;                 
+                    align-items: center;              
                     .news-box{
                         font-weight: bold;
                         background-color: $orangeColor;
@@ -103,17 +104,20 @@ main{
                         width: 65px;
                         height: 100px;
                         position: absolute;
-                        top: -20%;
+                        top: -5%;
                         left: 5%;
                     }
                     .news-context{
-                        // background-color: $pinkColor;
                         background-color:rgba(239,196,196,0.5); 
                         display: flex;
                         justify-content: center;
                         align-items: center; 
-                        //    height: 250px;
+                        height: 80%;
                         width: 100%;
+                        @media screen and (max-width: 1300px){
+                            font-size: 16px;
+                            
+                        }  
                         .t{ 
                             width: 80%;
                             thead{
@@ -142,10 +146,47 @@ main{
                     }
                 }
                 .advertise{
+                    display: flex;
+                    align-items: center;    
                     .swiper{
-                        height: 251px;
-                    }
-                   
+                        height: 80%;
+                        .swiper-slide{
+                            background-color: #BFC783;
+                            opacity: 0.9;
+                            
+                        }
+                        .swiper-box{
+                            height: 80%;
+                            background-color: #BFC783;
+                            opacity: 0.9;
+
+
+
+                        }
+                        .swiper-button-prev{         
+                            height: 20px;   
+                            width: 10px;             
+                            background-image: url("/image/pic/left.png");
+                            background-position: center;
+                            background-size: cover;
+                            &::after{
+                                display: none;                     
+                            }
+                
+                        }
+                        .swiper-button-next{         
+                            width: 10px;    
+                            height: 20px;            
+                            background-image: url("/image/pic/right.png");
+                            background-position: center;
+                            background-size: cover;
+                            &::after{
+                                content: none;                             
+                            }
+                
+                        }
+                    } 
+                                   
                 }
             }
             
