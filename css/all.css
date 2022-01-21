@@ -251,7 +251,17 @@ main #information {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 20px;
+  row-gap: 5%;
+}
+
+@media screen and (max-width: 1300px) {
+  main #information {
+    display: none;
+  }
+}
+
+main #information .container0 {
+  display: none;
 }
 
 main #information .container1 {
@@ -301,12 +311,6 @@ main #information .container1 .row .news .news-context {
   width: 100%;
 }
 
-@media screen and (max-width: 1300px) {
-  main #information .container1 .row .news .news-context {
-    font-size: 16px;
-  }
-}
-
 main #information .container1 .row .news .news-context .t {
   width: 80%;
 }
@@ -351,6 +355,10 @@ main #information .container1 .row .advertise .swiper {
   height: 80%;
 }
 
+main #information .container1 .row .advertise .swiper .swiper-slide img {
+  height: 100%;
+}
+
 main #information .container1 .row .advertise .swiper .swiper-slide .mask {
   opacity: 0.9;
   width: 100%;
@@ -379,7 +387,7 @@ main #information .container1 .row .advertise .swiper .swiper-slide .mask2 {
 }
 
 main #information .container1 .row .advertise .swiper .swiper-button-prev {
-  margin-top: -10px;
+  top: 54%;
   height: 20px;
   width: 10px;
   background-image: url("/image/pic/left.png");
@@ -509,14 +517,20 @@ main #information .container2 .row2 .member .member-section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #EEC7AE;
   width: 100%;
 }
 
-main #information .container2 .row2 .member .member-title {
+main #information .container2 .row2 .member .member-section .member-title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #information .container2 .row2 .member .member-section .member-title-box .member-title {
   background-color: #E8DBCC;
   width: 150px;
   height: 45px;
@@ -532,24 +546,146 @@ main #information .container2 .row2 .member .member-title {
   margin: 15px 0 20px 0;
 }
 
-main #information .container2 .row2 .member .member-context {
+main #information .container2 .row2 .member .member-section .member-context {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-main #information .container2 .row2 .member .member-context .member-card {
+main #information .container2 .row2 .member .member-section .member-context .member-card {
   text-align: center;
 }
 
-main #information .container2 .row2 .member .member-context .member-card img {
+main #information .container2 .row2 .member .member-section .member-context .member-card img {
   width: 150px;
   height: 150px;
   margin-bottom: 20px;
+}
+
+main #information0 {
+  background-color: white;
+}
+
+main #information0 .container1 {
+  padding-left: 10%;
+}
+
+main #information0 .container1 .table-price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+main #information0 .container1 .table-price .price-place {
+  position: relative;
+}
+
+main #information0 .container1 .table-price .price-place .price-text {
+  font-size: 28px;
+  position: relative;
+  top: 20px;
+}
+
+main #information0 .container1 .table-price .price-place .price-box {
+  margin-left: 2.5%;
+  background-color: #EEC7A0;
+  width: 150px;
+  height: 40px;
+}
+
+main #information0 .container1 .table-price .rules-place {
+  margin-top: 20px;
+  text-align: center;
+}
+
+main #information0 .container1 .table-price .time-place {
+  position: relative;
+}
+
+main #information0 .container1 .table-price .time-place .time-text {
+  font-size: 28px;
+  position: relative;
+  top: 20px;
+}
+
+main #information0 .container1 .table-price .time-place .time-box {
+  margin-left: 2.5%;
+  background-color: #EEC7A0;
+  width: 150px;
+  height: 40px;
+}
+
+main #information0 .container1 .table-price .real-time {
+  margin: 20px 0 40px 0;
+}
+
+main #information0 .container1 .table-price .real-time .noon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+
+main #information0 .container1 .table-price .real-time .noon p {
+  margin: 0 10px 0 0;
+}
+
+main #information0 .container1 .table-price .real-time .noon .noon-number {
+  width: 200px;
+  height: 45px;
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #information0 .container1 .table-price .real-time .night {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #information0 .container1 .table-price .real-time .night p {
+  margin: 0 10px 0 0;
+}
+
+main #information0 .container1 .table-price .real-time .night .night-number {
+  width: 200px;
+  height: 45px;
+  background-color: #E5E5E5;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main #how-to-use {

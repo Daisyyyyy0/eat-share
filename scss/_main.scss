@@ -83,10 +83,17 @@ main{
     
     // 平台資訊
     #information{
+        @media screen and (max-width: 1300px){
+            display: none;
+            
+        }  
         padding: 4rem 0;
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        row-gap: 5%;
+        .container0{
+            display: none;
+        }
         .container1{
             margin-top: 80px;
             position: relative;
@@ -114,10 +121,7 @@ main{
                         align-items: center; 
                         height: 80%;
                         width: 100%;
-                        @media screen and (max-width: 1300px){
-                            font-size: 16px;
-                            
-                        }  
+                        
                         .t{ 
                             width: 80%;
                             thead{
@@ -151,7 +155,10 @@ main{
                     .swiper{
                         height: 80%;
                         .swiper-slide{
-                             .mask{
+                            img{
+                                height: 100%;
+                            }
+                            .mask{
                                 opacity: 0.9;
                                 width: 100%;
                                 height: 100%;
@@ -168,11 +175,10 @@ main{
                             }
                             .mask2{
                                 background-color: #E0AB77;
-                            }
+                            }                    
                         }
-                       
-                        .swiper-button-prev{     
-                            margin-top: -10px;    
+                        .swiper-button-prev{        
+                            top: 54%;
                             height: 20px;   
                             width: 10px;             
                             background-image: url("/image/pic/left.png");
@@ -256,53 +262,138 @@ main{
                                 }
                             }
                         }
-                        
-
                     }
                 }
                 .member{
                     font-size: 24px;
                     font-weight: bold;
                     display: flex;
-                    // flex-direction: column;
-                    // align-items: center;
                     .member-section{
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
                         background-color: $orangeColor;  
                         width: 100%;
-                    }
-                   
-                    .member-title{
-                        background-color: #E8DBCC;
-                        width: 150px;
-                        height: 45px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin: 15px 0 20px 0;
-                    }
-                    .member-context{
-                        display: flex;
-                        flex-wrap: wrap;
-                        column-gap: 30px;
-                        .member-card{
-                            // display: flex;
-                            // flex-direction: column;
-                            // flex-wrap: wrap;
-                            text-align: center;
-                            img{
+                        
+                        .member-title-box{
+                            display: flex;
+                            justify-content: center;
+                            .member-title{
+                                background-color: #E8DBCC;
                                 width: 150px;
-                                height: 150px;
-                                margin-bottom: 20px;
+                                height: 45px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 15px 0 20px 0;
                             }
                         }
+                        .member-context{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-evenly;
+                        
+                            .member-card{
+                                text-align: center;
+                                img{
+                                    width: 150px;
+                                    height: 150px;
+                                    margin-bottom: 20px;
+                                }
+                            } 
+                            
+                        }
+                    }
+                   
+                   
+                }
+            }
+        }
+    }
+    // 平台資訊rwd
+    #information0{ 
+        background-color: white;
+        .container1{   
+            padding-left: 10%;       
+            .table-price{
+                font-size: 22px;
+                font-weight: bold;
+                .price-place{
+                    position: relative;
+                    .price-text{
+                        font-size: 28px;
+                        position: relative;
+                        top: 20px;                    
+                    }
+                    .price-box{
+                        margin-left: 2.5%;
+                        background-color: #EEC7A0; 
+                        width: 150px;
+                        height: 40px;
+                    }
+                }
+                .rules-place{
+                    margin-top: 20px;
+                    text-align: center;
+                   
+                }
+                .time-place{
+                    position: relative;
+                    .time-text{
+                        font-size: 28px;
+                        position: relative;
+                        top: 20px;                    
+                    }
+                    .time-box{
+                        margin-left: 2.5%;
+                        background-color: #EEC7A0; 
+                        width: 150px;
+                        height: 40px;
+                    }
+                }
+                .real-time{
+                    margin: 20px 0 40px 0;
+                    .noon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 10px;
+                        p{
+                            margin: 0 10px 0 0 ;
+                        }
+                        .noon-number{
+                            width: 200px;
+                            height: 45px;
+                            background-color: #E5E5E5;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                    }
+                    .night {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        p{
+                            margin: 0 10px 0 0 ;
+                        }
+                        .night-number{
+                            width: 200px;
+                            height: 45px;
+                            background-color: #E5E5E5;
+                            border-radius: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
                     }
                 }
             }
         }
     }
+
     // 使用流程
     #how-to-use{
         padding-top: 4rem;
