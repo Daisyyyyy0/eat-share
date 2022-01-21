@@ -14,7 +14,7 @@
         "../scss/main/_pain-point.scss",
         "../scss/main/_belief.scss",
         "../scss/main/_partner.scss",
-        "../scss/dinner-location.scss"
+        "../scss/_dinner-location.scss"
     ],
     "names": [],
     "file": "all.css"
