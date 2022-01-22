@@ -1,0 +1,39 @@
+.searchBarWrap{
+
+    @media screen and (max-width:430px){
+        width: 210px;
+    }
+    .point{
+        font-size: 0.8rem;
+        margin-top: 0.25rem;
+        // padding-left: .125rem;
+        color: $greenColor;
+        letter-spacing: 1px;
+        @media screen and (max-width:430px){
+            letter-spacing: 0px;
+        }
+    }
+}
+#searchBar{
+    border: 1px solid $greenColor;
+    padding: .25rem;
+    // border-radius: 50%;
+    // border-radius: 1rem;
+    
+    .form-control{
+        border: none;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .btn-outline-success{
+        background-color: transparent; 
+        border-color: currentColor;
+        border-color: $greenColor;
+        color: #fff;
+    }
+    i.bi{
+        font-size: 16px; 
+        color: $greenColor;
+    }
+}
