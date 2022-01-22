@@ -1,29 +1,25 @@
 // const jsonData = require('./dinner.json'); 
-fetch("JS/dinner.json")
-    .then(response => {
-    return response.json();
-    })
-    .then(jsondata => {
-        const dataPanel = document.querySelector('#location .locationWrap')
-        const searchBar = document.querySelector('#searchBar')
-        const searchInput = document.querySelector('#searchBar input')
+const dataPanel = document.querySelector('#location .north-area .locationWrap')
+// console.log(dataPanel.length);
+const searchBar = document.querySelector('#searchBar')
+const searchInput = document.querySelector('#searchBar input')
 
-        function renderList(){
-            let rawHTML = ''
-            dataPanel.forEach( (item) => {
-                rawHTML += `
+function renderList(data){
+        let rawHTML = ''
+        data.forEach((item) => {
+            // console.log(item);
+        rawHTML += `
                         <div class="kitchen-location">
                         <div class="kitchen-location-img"
-                            style="background-image: url(`${jsondata[0]}`);">
+                            style="background-image: url(${item.img});">
 
                         </div>
                         <div class="textWrap">
                             <div class="kitchen-location-title">
-                                台北市文山區-1
+                                ${item.title}
                             </div>
                             <div class="kitchen-location-desc">
-                                皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                (BTW，這飯菜看起來好溫馨喔)
+                                ${item.content}
                             </div>
                             <div class="kitchen-location-time">
                                 <div class="timeWrap">
@@ -40,6 +36,14 @@ fetch("JS/dinner.json")
                                         <div class="week wed">
                                             <span class="ch">星期三</span>
                                             <span class="en">Wed.</span>
+                                        </div>
+                                        <div class="week thus">
+                                            <span class="ch">星期四</span>
+                                            <span class="en">Thus.</span>
+                                        </div>
+                                        <div class="week fri">
+                                            <span class="ch">星期五</span>
+                                            <span class="en">Fri.</span>
                                         </div>
                                     </div>
                                 </div>
@@ -58,35 +62,44 @@ fetch("JS/dinner.json")
                         </div>
                     </div>
                 `
+        })
+        dataPanel.innerHTML = rawHTML
+}
+
+fetch("JS/dinner.json")
+    .then(response => {
+    return response.json();
+    })
+
+    .then(jsondata => {
+        // console.log(jsondata.data);
+        renderList(jsondata.data)
+        let locations = jsondata.data
+        // console.log(locations);
+        
+            searchBar.addEventListener('submit', function searchBarsubmitted(e){
+                e.preventDefault()  //預防瀏覽器預設行為
+                // console.log('click');
+                const keyword = searchInput.value.trim()
+                console.log(keyword);
+                console.log(keyword.lenth);
+
+                // if(!keyword.lenth){
+                //     return alert('請輸入有效字串!')
+                // }
+
+                let filterLocations = []
+                // for (const location of locations){
+                //     if(location.title.includes(keyword){
+                //         filterLocations.push(location)
+                //     })
+                // }
+                filterLocations = locations.filter( (location) =>
+                    location.title.includes(keyword)
+                )
+                console.log(filterLocations);
+                renderList(filterLocations)
             })
         }
-    }
-        
-
-// searchBar.addEventListener('submit', function searchBarsubmitted(e){
-//     e.preventDefault()  //預防瀏覽器預設行為
-//     // console.log('click');
-
-//     const keyword = searchInput.value.trim()
-
-//     if(!keyword.lenth){
-//         return alert('請輸入有效字串!')
-//     }
-// })
-
-// let filterLocations = []
-// for (const location of locations){
-//     if(location.title.includes(keyword){
-//         filterLocations.push(location)
-//     })
-// }
-
-
-// filterLocations = locations.filter( (location) =>
-//     location.title.includes(keyword)
-// )
-
-
-
-        );
+    );
 

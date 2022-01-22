@@ -16,6 +16,9 @@ header{
     padding: 6px 0;
     img{
       height: 3.25rem;
+      @media screen and(max-width:768px) {
+        height: 2.5rem;
+      }
     }
   }
   .navbar-toggler{
@@ -30,13 +33,27 @@ header{
 
   }
   .navbar-nav{
+    @media screen and(max-width:992px) {
+      margin-top: 0.5rem;
+      .nav-item{
+        margin-bottom: 0.5rem;
+      }
+      @media screen and(max-width:768px){
+        .nav-item{
+          margin-bottom: 0.25rem;
+          &:last-child{
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
     .nav-item {
-      margin-right: 10px;
+      margin-right: 10px; 
       .nav-link{
         padding: 0.25rem;
         margin: 0 .25rem;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 700;
         color: $redColor;
         position: relative;
         transition: all .3s;
