@@ -569,6 +569,13 @@ main #information .container2 .row2 .member .member-section .member-context .mem
 
 main #information0 {
   background-color: white;
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  main #information0 {
+    display: block;
+  }
 }
 
 main #information0 .container1 {
@@ -594,7 +601,7 @@ main #information0 .container1 .table-price .price-place .price-box {
   margin-left: 2.5%;
   background-color: #EEC7A0;
   width: 150px;
-  height: 40px;
+  height: 30px;
 }
 
 main #information0 .container1 .table-price .rules-place {
@@ -616,7 +623,7 @@ main #information0 .container1 .table-price .time-place .time-box {
   margin-left: 2.5%;
   background-color: #EEC7A0;
   width: 150px;
-  height: 40px;
+  height: 30px;
 }
 
 main #information0 .container1 .table-price .real-time {
@@ -656,6 +663,12 @@ main #information0 .container1 .table-price .real-time .noon .noon-number {
           align-items: center;
 }
 
+@media screen and (max-width: 360px) {
+  main #information0 .container1 .table-price .real-time .noon .noon-number {
+    width: 150px;
+  }
+}
+
 main #information0 .container1 .table-price .real-time .night {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,6 +699,95 @@ main #information0 .container1 .table-price .real-time .night .night-number {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+  main #information0 .container1 .table-price .real-time .night .night-number {
+    width: 150px;
+  }
+}
+
+main #information0 .container2 {
+  font-size: 14px;
+  display: none;
+}
+
+@media screen and (max-width: 360px) {
+  main #information0 .container2 {
+    display: block;
+  }
+}
+
+main #information0 .container2 img {
+  width: 100%;
+}
+
+main #information0 .container2 .news-place {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+main #information0 .container2 .news-place .news-place-title {
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+}
+
+main #information0 .container2 .news-place .news-place-box {
+  background-color: #EEC7A0;
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+main #information0 .container2 .news-text .news-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #information0 .container2 .news-text .news-grid .number {
+  color: white;
+  background-color: #DA7569;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+main #information0 .container2 .news-text .news-grid .time {
+  margin: 5px 0 0 15px;
+}
+
+main #information0 .container2 .news-text .news-grid .content {
+  margin-top: 5px;
+}
+
+main #information0 .container2 .news-text .news-grid .content1 {
+  margin-left: 45px;
+}
+
+main #information0 .container2 .news-text .news-grid .content2 {
+  margin-left: 10px;
+}
+
+main #information0 .container2 .news-text .news-grid .content3 {
+  margin-left: 60px;
 }
 
 main #how-to-use {

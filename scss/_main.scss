@@ -312,6 +312,11 @@ main{
     // 平台資訊rwd
     #information0{ 
         background-color: white;
+        display: none;
+        @media screen and (max-width: 1300px){
+            display: block;
+            
+        }  
         .container1{   
             padding-left: 10%;       
             .table-price{
@@ -328,7 +333,7 @@ main{
                         margin-left: 2.5%;
                         background-color: #EEC7A0; 
                         width: 150px;
-                        height: 40px;
+                        height: 30px;
                     }
                 }
                 .rules-place{
@@ -347,7 +352,7 @@ main{
                         margin-left: 2.5%;
                         background-color: #EEC7A0; 
                         width: 150px;
-                        height: 40px;
+                        height: 30px;
                     }
                 }
                 .real-time{
@@ -368,7 +373,11 @@ main{
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @media screen and (max-width: 360px){
+                                width: 150px;                          
+                            } 
                         }
+                        
 
                     }
                     .night {
@@ -386,10 +395,79 @@ main{
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            @media screen and (max-width: 360px){
+                                width: 150px;                          
+                            } 
                         }
 
                     }
                 }
+            }
+        }
+        .container2{
+            font-size: 14px;
+            display: none;
+            @media screen and (max-width: 360px){
+                display: block;                          
+            } 
+
+            img{
+                width: 100%;
+            }
+            .news-place{
+                margin: 20px 0;
+                display: flex;
+                justify-content: center;
+                position: relative;
+                .news-place-title{
+                    font-size: 28px;
+                    font-weight: bold;
+                    position: absolute;
+                }
+                .news-place-box{
+                    background-color: #EEC7A0; 
+                    width: 150px;
+                    height: 30px;
+                    margin-top: 20px;
+                    
+
+                }
+            }
+            .news-text{
+                // padding-left: 10%; 
+                .news-grid{
+                    // border: 1px solid #000;
+                    display: flex;
+                    // justify-content: flex-end;
+                    .number{
+                        color: white;
+                        background-color: $redColor;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 20px;
+                    }
+                    .time{
+                        margin: 5px 0 0 15px;
+                    }
+                    .content{
+                        margin-top: 5px;
+                    }
+                    .content1{
+                        margin-left: 45px;
+                    }
+                    .content2{
+                        margin-left: 10px;
+                    }
+                    .content3{
+                        margin-left: 60px;
+                    }
+                    
+                }
+
             }
         }
     }
