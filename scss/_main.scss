@@ -468,11 +468,16 @@ main{
             }
         }
     }
-    // 平台資訊rwd768 團隊介紹
+    // 平台資訊rwd768 團隊介紹 rwd320
     #information1{
         background-color: $orangeColor;
+        display: none;
+        @media screen and (max-width: 1300px){
+            display: block;
+                                  
+         }  
         @media screen and (max-width: 450px){
-           background-color: white;
+            background-color: white;
                                  
         }  
         .container{
@@ -582,7 +587,6 @@ main{
     // 商家介紹
     #kitchen{
         padding: 4rem 0;
-        // height: 1200px;
         background-color: $themeColor;
         color: $textColor;
 
@@ -598,6 +602,10 @@ main{
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
+            img{
+                width: 250px;
+                height: 250px;
+            }
             .introduce1{
                 border: 3px solid $greenColor; 
             }

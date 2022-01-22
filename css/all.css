@@ -792,6 +792,13 @@ main #information0 .container2 .news-text .news-grid .content3 {
 
 main #information1 {
   background-color: #EEC7AE;
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  main #information1 {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -964,6 +971,11 @@ main #kitchen .shop {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1rem;
+}
+
+main #kitchen .shop img {
+  width: 250px;
+  height: 250px;
 }
 
 main #kitchen .shop .introduce1 {
