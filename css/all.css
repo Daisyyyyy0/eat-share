@@ -1343,7 +1343,7 @@ main #kitchen .shop .shop-introduce .bottom a {
   padding: 4rem 0;
 }
 
-#kitchen .container {
+#kitchen .container-lg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1356,13 +1356,13 @@ main #kitchen .shop .shop-introduce .bottom a {
           align-items: center;
 }
 
-#kitchen .container .textWrap {
+#kitchen .container-lg .textWrap {
   text-align: center;
   max-width: 576px;
   padding: 1rem;
 }
 
-#kitchen .container .textWrap .kitchen-heading {
+#kitchen .container-lg .textWrap .kitchen-heading {
   margin-bottom: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -1370,7 +1370,7 @@ main #kitchen .shop .shop-introduce .bottom a {
   position: relative;
 }
 
-#kitchen .container .textWrap .kitchen-heading::before {
+#kitchen .container-lg .textWrap .kitchen-heading::before {
   content: '';
   position: absolute;
   bottom: -1rem;
@@ -1385,7 +1385,7 @@ main #kitchen .shop .shop-introduce .bottom a {
   border-bottom-color: #F2E4D4;
 }
 
-#kitchen .container .textWrap .desc {
+#kitchen .container-lg .textWrap .desc {
   margin-top: 2rem;
   padding-top: 2rem;
   font-size: 1.125rem;
@@ -1394,7 +1394,55 @@ main #kitchen .shop .shop-introduce .bottom a {
   line-height: 2.5;
 }
 
-#kitchen .container .areaBtnWrap {
+@media screen and (max-width: 768px) {
+  #kitchen .container-lg .textWrap .desc {
+    margin-top: 0;
+    padding: 1rem 0;
+  }
+}
+
+#kitchen .container-lg .bottomWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #kitchen .container-lg .bottomWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #kitchen .container-lg .bottomWrap .areaBtnWrap {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #kitchen .container-lg .bottomWrap .imgWrap img {
+    width: 100%;
+  }
+}
+
+#kitchen .container-lg .areaBtnWrap {
   padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1408,7 +1456,17 @@ main #kitchen .shop .shop-introduce .bottom a {
   width: 100%;
 }
 
-#kitchen .container .areaBtnWrap .area-btn {
+@media screen and (max-width: 768px) {
+  #kitchen .container-lg .areaBtnWrap {
+    padding: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: unset;
+  }
+}
+
+#kitchen .container-lg .areaBtnWrap .area-btn {
   padding: 1.1875rem 2rem;
   width: 12.5rem;
   font-size: 1.75rem;
@@ -1421,21 +1479,53 @@ main #kitchen .shop .shop-introduce .bottom a {
           box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-#kitchen .container .areaBtnWrap .north {
+@media screen and (max-width: 992px) {
+  #kitchen .container-lg .areaBtnWrap .area-btn {
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    border-radius: 2.5rem;
+    width: 8rem;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+
+#kitchen .container-lg .areaBtnWrap .north {
   background-color: #BC7C96;
 }
 
-#kitchen .container .areaBtnWrap .mid {
+#kitchen .container-lg .areaBtnWrap .mid {
   background-color: #DA7569;
 }
 
-#kitchen .container .areaBtnWrap .south {
+#kitchen .container-lg .areaBtnWrap .south {
   background-color: #E0AB77;
 }
 
 #location {
   background-color: #fff;
   padding: 4rem 0;
+}
+
+#location .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#location .search .btn-outline-success {
+  background-color: #EAA69D;
+  border-color: #EAA69D;
+  color: #fff;
+}
+
+#location .search i.bi {
+  font-size: 16px;
 }
 
 #location .north-area .area-title {
@@ -1477,14 +1567,38 @@ main #kitchen .shop .shop-introduce .bottom a {
           box-shadow: 10px 12px 24px rgba(0, 0, 0, 0.15);
 }
 
+@media screen and (max-width: 992px) {
+  #location .area .area-title {
+    font-size: 1.25rem;
+    width: 8rem;
+    padding: .5rem 2rem;
+  }
+}
+
 #location .area .locationWrap {
   position: relative;
 }
 
-#location .area .locationWrap::before {
+#location .area .kitchen-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3rem 0rem 4rem;
+  border-bottom: 1px solid #aaa;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#location .area .kitchen-location:first-child::before {
   content: '';
   position: absolute;
-  top: 0rem;
+  top: -15px;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: #333;
@@ -1496,19 +1610,24 @@ main #kitchen .shop .shop-introduce .bottom a {
   border-bottom-color: #fff;
 }
 
-#location .area .kitchen-location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 3rem 0rem 4rem;
-  border-bottom: 1px solid #aaa;
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #location .area .kitchen-location {
+    padding: 2rem .75rem;
+  }
 }
 
 #location .area .kitchen-location:last-child {
@@ -1522,11 +1641,18 @@ main #kitchen .shop .shop-introduce .bottom a {
   background-position: center;
 }
 
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location-img {
+    margin-bottom: 1.75rem;
+  }
+}
+
 #location .area .kitchen-location-img img {
   width: 100%;
 }
 
 #location .area .kitchen-location .textWrap {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1534,16 +1660,46 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: calc(100% - 350px);
+}
+
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location .textWrap {
+    width: 100%;
+  }
 }
 
 #location .area .kitchen-location-title {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) and (min-width: 720px) {
+  #location .area .kitchen-location-title {
+    text-align: center;
+  }
+}
+
+#location .area .kitchen-location-desc {
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location-desc {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #location .area .kitchen-location-desc {
+    margin-bottom: 1rem;
+  }
 }
 
 #location .area .kitchen-location-time {
@@ -1553,6 +1709,28 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#location .area .kitchen-location-time .timeWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 576px) {
+  #location .area .kitchen-location-time .timeWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #location .area .kitchen-location-time .timeWrap .timing {
+    margin: 1rem 0.25rem;
+    font-size: 1.125rem;
+  }
 }
 
 #location .area .kitchen-location-time .timing {
@@ -1565,12 +1743,22 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
 }
 
 #location .area .kitchen-location-time .weekWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  #location .area .kitchen-location-time .weekWrap {
+    position: relative;
+    left: -4px;
+  }
 }
 
 #location .area .kitchen-location-time .weekWrap .week {
@@ -1584,15 +1772,21 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 75px;
+  width: 5.25rem;
   height: 3rem;
-  margin-right: .5rem;
-  padding: .125rem .75rem;
+  margin-right: 1rem;
   text-align: center;
   font-size: 0.9rem;
   background-color: #e5e5e5;
   border-radius: 1.5rem;
   line-height: 1.125;
+}
+
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location-time .weekWrap .week {
+    margin-right: .5rem;
+    height: 2.5rem;
+  }
 }
 
 #location .area .kitchen-location-time .weekWrap .week .en {
@@ -1603,6 +1797,14 @@ main #kitchen .shop .shop-introduce .bottom a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  #location .area .kitchen-location-time .meal {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 #location .area .kitchen-location-time .meal > * {
@@ -1616,7 +1818,7 @@ main #kitchen .shop .shop-introduce .bottom a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-right: 1rem;
+  margin-right: .5rem;
   text-align: center;
   background-color: #D9CDBE;
   line-height: 1.125;
@@ -1625,6 +1827,26 @@ main #kitchen .shop .shop-introduce .bottom a {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  #location .area .kitchen-location-time .meal > * {
+    margin-right: .5rem;
+    line-height: .9;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9rem;
+    position: relative;
+  }
+  #location .area .kitchen-location-time .meal > * .ch {
+    position: relative;
+    top: -4px;
+  }
+  #location .area .kitchen-location-time .meal > * .en {
+    position: relative;
+    top: -4px;
+    font-size: .5rem;
+  }
 }
 
 #location .area .kitchen-location-time .meal > * .en {
