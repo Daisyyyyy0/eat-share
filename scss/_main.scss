@@ -407,7 +407,7 @@ main{
         .container2{
             font-size: 14px;
             display: none;
-            @media screen and (max-width: 360px){
+            @media screen and (max-width: 320px){
                 display: block;                          
             } 
 
@@ -434,11 +434,8 @@ main{
                 }
             }
             .news-text{
-                // padding-left: 10%; 
                 .news-grid{
-                    // border: 1px solid #000;
                     display: flex;
-                    // justify-content: flex-end;
                     .number{
                         color: white;
                         background-color: $redColor;
@@ -470,6 +467,63 @@ main{
 
             }
         }
+    }
+    // 平台資訊rwd768 團隊介紹 rwd320
+    #information1{
+        background-color: $orangeColor;
+        display: none;
+        @media screen and (max-width: 1300px){
+            display: block;
+                                  
+         }  
+        @media screen and (max-width: 450px){
+            background-color: white;
+                                 
+        }  
+        .container{
+            .member-place{
+                font-size: 28px;
+                font-weight: bold;
+                .member-place-title-place{
+                    display: flex;
+                    justify-content: center;
+                    .member-place-title-box{
+                        width: 150px;
+                        height: 40px;
+                        background-color: #E8DBCC;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 20px 0 30px 0;
+                    }
+                }               
+                .member-place-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 35px;
+                    .member-place-part{                  
+                        display: flex;
+                        .member-place-card{
+                            text-align: center;  
+                            img{
+                                @media screen and (max-width: 450px){
+                                    width: 120px;
+                                    height: 130px;
+                                                         
+                                }  
+                            }                      
+                        }
+                        .card1{
+                            margin-right: 30px;
+                        }
+                    }
+                   
+                }
+                
+            }
+        }
+
     }
 
     // 使用流程
@@ -533,7 +587,6 @@ main{
     // 商家介紹
     #kitchen{
         padding: 4rem 0;
-        // height: 1200px;
         background-color: $themeColor;
         color: $textColor;
 
@@ -549,6 +602,10 @@ main{
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1rem;
+            img{
+                width: 250px;
+                height: 250px;
+            }
             .introduce1{
                 border: 3px solid $greenColor; 
             }
