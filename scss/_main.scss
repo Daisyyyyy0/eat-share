@@ -475,7 +475,7 @@ main{
         @media screen and (max-width: 1300px){
             display: block;
                                   
-         }  
+        }  
         @media screen and (max-width: 450px){
             background-color: white;
                                  
@@ -589,72 +589,122 @@ main{
         padding: 4rem 0;
         background-color: $themeColor;
         color: $textColor;
-
-        .kitchen-heading{
-            font-size: 36px;
-            font-weight: bold;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 4rem;
+        @media screen and (max-width: 1200px) {
+            background-color:  white;    
         }
-        .shop{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-            img{
-                width: 250px;
-                height: 250px;
+        .container{
+            @media screen and (max-width: 1200px) {
+               display: flex;
+               flex-direction: column;
+               align-items: center;
             }
-            .introduce1{
-                border: 3px solid $greenColor; 
-            }
-            .introduce2{
-                border: 3px solid $purpleColor; 
-            }
-            .introduce3{
-                border: 3px solid $redColor; 
-            }
-            .shop-introduce{              
-                border-radius: 5px;
-                width: 75%;
-                height: 80%;
-                padding: 15px;
+            .kitchen-heading{
+                font-size: 36px;
+                font-weight: bold;
                 display: flex;
-                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 4rem;
+                @media screen and (max-width: 1200px) {
+                    background-color:  $themeColor;
+                    width: 200px;
+                    height: 67px;
+                    align-items: center;
+                }
+            }
+            .shop{
+                display: flex;
                 justify-content: space-between;
-                background-color: white;
-
-                .title{
-                    font-size: 24px;
-                    font-weight: bold;
-                }
-                p{
-                    font-size: 20px;
-                    width: 90%;
-                    margin: 0;
-                }
-                .bottom{
-                    display: flex;
-                    justify-content: space-between;
-
-                    .time-box{
-                        display: flex;
-                        .time{
-                            background-color: #E5E5E5;
-                            border-radius: 20px;
-                            margin-right: 10px; 
-                        }
-                        
+                align-items: center;
+                margin-bottom: 1rem;
+                img{
+                    width: 250px;
+                    height: 250px;
+                    @media screen and (max-width: 1200px) {
+                        width: 200px;
+                        height: 200px;
                     }
-                    a{
-                        color: $redColor;
-                        margin-right: 30px;
-                        
+                }
+                .introduce1{
+                    border: 3px solid $greenColor; 
+                }
+                .introduce2{
+                    border: 3px solid $purpleColor; 
+                }
+                .introduce3{
+                    border: 3px solid $redColor; 
+                }
+                .shop-introduce{              
+                    border-radius: 5px;
+                    width: 75%;
+                    height: 80%;
+                    padding: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    @media screen and (max-width: 1200px) {
+                        border: 0px;
+                        width: 350px;
+                    }
+
+                    .title{
+                        font-size: 28px;
+                        font-weight: bold;
+                        @media screen and (max-width: 1200px) {
+                            display: flex;
+                            justify-content: flex-end;
+                        }
+                    }
+                    .place{
+                        font-size: 24px;
+                        width: 90%;
+                        @media screen and (max-width: 1200px) {
+                            font-size: 16px;
+                            width: 100%;
+                            // display: flex;
+                            // justify-content: flex-end;
+                    
+                        }                    
+                      
+                    }                   
+                    .bottom{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 5px 0;
+                        @media screen and (max-width: 1200px) {
+                            flex-direction: column;
+                        }
+                        .time-box{
+                            display: flex;
+                            @media screen and (max-width: 1200px) {
+                               justify-content: space-bet;
+                            }
+                            .time{
+                                background-color: #E5E5E5;
+                                border-radius: 20px;
+                                margin-right: 10px; 
+                            }
+                            
+                        }
+                        .see-more{
+                            @media screen and (max-width: 1200px) {
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            a{
+                                color: $redColor;
+                                margin-right: 30px;    
+                                @media screen and (max-width: 1200px) {
+                                    margin: 0;
+                                }                     
+                            }
+                        }
+                       
                     }
                 }
             }
         }
+
+       
         
     }
 

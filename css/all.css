@@ -1023,7 +1023,28 @@ main #kitchen {
   color: #333;
 }
 
-main #kitchen .kitchen-heading {
+@media screen and (max-width: 1200px) {
+  main #kitchen {
+    background-color: white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main #kitchen .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+main #kitchen .container .kitchen-heading {
   font-size: 36px;
   font-weight: bold;
   display: -webkit-box;
@@ -1035,7 +1056,18 @@ main #kitchen .kitchen-heading {
   margin-bottom: 4rem;
 }
 
-main #kitchen .shop {
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .kitchen-heading {
+    background-color: #F2E4D4;
+    width: 200px;
+    height: 67px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+main #kitchen .container .shop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1048,24 +1080,31 @@ main #kitchen .shop {
   margin-bottom: 1rem;
 }
 
-main #kitchen .shop img {
+main #kitchen .container .shop img {
   width: 250px;
   height: 250px;
 }
 
-main #kitchen .shop .introduce1 {
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+main #kitchen .container .shop .introduce1 {
   border: 3px solid #A1A481;
 }
 
-main #kitchen .shop .introduce2 {
+main #kitchen .container .shop .introduce2 {
   border: 3px solid #BC7C96;
 }
 
-main #kitchen .shop .introduce3 {
+main #kitchen .container .shop .introduce3 {
   border: 3px solid #DA7569;
 }
 
-main #kitchen .shop .shop-introduce {
+main #kitchen .container .shop .shop-introduce {
   border-radius: 5px;
   width: 75%;
   height: 80%;
@@ -1077,47 +1116,103 @@ main #kitchen .shop .shop-introduce {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: white;
 }
 
-main #kitchen .shop .shop-introduce .title {
-  font-size: 24px;
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce {
+    border: 0px;
+    width: 350px;
+  }
+}
+
+main #kitchen .container .shop .shop-introduce .title {
+  font-size: 28px;
   font-weight: bold;
 }
 
-main #kitchen .shop .shop-introduce p {
-  font-size: 20px;
-  width: 90%;
-  margin: 0;
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 
-main #kitchen .shop .shop-introduce .bottom {
+main #kitchen .container .shop .shop-introduce .place {
+  font-size: 24px;
+  width: 90%;
+}
+
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .place {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+main #kitchen .container .shop .shop-introduce .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 5px 0;
 }
 
-main #kitchen .shop .shop-introduce .bottom .time-box {
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main #kitchen .container .shop .shop-introduce .bottom .time-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main #kitchen .shop .shop-introduce .bottom .time-box .time {
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .bottom .time-box {
+    -webkit-box-pack: space-bet;
+        -ms-flex-pack: space-bet;
+            justify-content: space-bet;
+  }
+}
+
+main #kitchen .container .shop .shop-introduce .bottom .time-box .time {
   background-color: #E5E5E5;
   border-radius: 20px;
   margin-right: 10px;
 }
 
-main #kitchen .shop .shop-introduce .bottom a {
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .bottom .see-more {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+main #kitchen .container .shop .shop-introduce .bottom .see-more a {
   color: #DA7569;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  main #kitchen .container .shop .shop-introduce .bottom .see-more a {
+    margin: 0;
+  }
 }
 
 #banner {
