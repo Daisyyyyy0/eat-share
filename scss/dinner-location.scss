@@ -1,5 +1,15 @@
-#kitchen{
+@import "variable";
+@import "mixin";
+@import "animation";
+
+@import "layout";
+@import "header";
+@import "footer";
+@import "searchBar";
+
+main section#kitchen{
     padding: 4rem 0;
+    background-color: $themeColor;
     .container-lg{
         display: flex;
         flex-direction: column;
@@ -171,7 +181,7 @@
     }
 }
 
-#location{
+main section#location{
     background-color: #fff;
     padding: 4rem 0;
     .searchWrap{
