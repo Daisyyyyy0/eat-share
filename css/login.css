@@ -98,7 +98,11 @@
   border: 0;
 }
 
-.login .content .text .button-box .button2 {
+.login .content .text .button-box a {
+  text-decoration: none;
+}
+
+.login .content .text .button-box a .button2 {
   display: none;
 }
 
@@ -205,7 +209,7 @@
             justify-content: space-between;
     width: 90%;
   }
-  .login .content .text .button-box .button2 {
+  .login .content .text .button-box a .button2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,7 +264,7 @@
   .login .content .text .button-box .button1 {
     width: 100px;
   }
-  .login .content .text .button-box .button2 {
+  .login .content .text .button-box a .button2 {
     width: 100px;
   }
 }
