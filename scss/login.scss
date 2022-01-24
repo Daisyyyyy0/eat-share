@@ -73,9 +73,13 @@
                     border-radius: 5px; 
                     border: 0;
                 }
-                .button2{
-                    display: none;
+                a{
+                    text-decoration: none;
+                    .button2{
+                        display: none;
+                    }  
                 }
+                
             }
             .bottom{
                 font-size: 20px;
@@ -163,17 +167,18 @@
                     margin-top: 20%;
                     justify-content: space-between;
                     width: 90%;
-                    .button2{
-                        display: flex;
-                        background-color: #97989a;
-                        width: 150px; 
-                        height: 45px; 
-                        border-radius: 5px; 
-                        border: 0;
-                        justify-content: center;
-                        align-items: center;
+                    a{
+                       .button2{
+                            display: flex;
+                            background-color: #97989a;
+                            width: 150px; 
+                            height: 45px; 
+                            border-radius: 5px; 
+                            border: 0;
+                            justify-content: center;
+                            align-items: center;
+                        } 
                     }
-
                 }
                 .line{
                     width: 90%;
@@ -231,9 +236,12 @@
                     .button1{
                         width: 100px;
                     }
-                    .button2{
-                        width: 100px;
+                    a{
+                       .button2{
+                            width: 100px;
+                        }  
                     }
+                   
                 }
             }
         }
