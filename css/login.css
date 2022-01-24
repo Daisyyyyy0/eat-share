@@ -86,8 +86,6 @@
           justify-content: center;
   margin: 25px 0 15px 0;
   font-size: 24px;
-  font-weight: bold;
-  color: white;
 }
 
 .login .content .text .button-box .button1 {
@@ -96,6 +94,8 @@
   height: 45px;
   border-radius: 5px;
   border: 0;
+  font-weight: bold;
+  color: white;
 }
 
 .login .content .text .button-box a {
@@ -209,6 +209,9 @@
             justify-content: space-between;
     width: 90%;
   }
+  .login .content .text .button-box .button1 {
+    font-weight: normal;
+  }
   .login .content .text .button-box a .button2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,6 +227,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: white;
   }
   .login .content .text .line {
     width: 90%;
