@@ -7,7 +7,7 @@
 @import "footer";
 @import "searchBar";
 
-#kitchen{
+main section#kitchen{
     padding: 4rem 0;
     background-color: $themeColor;
     .container-lg{
@@ -181,7 +181,7 @@
     }
 }
 
-#location{
+main section#location{
     background-color: #fff;
     padding: 4rem 0;
     .searchWrap{

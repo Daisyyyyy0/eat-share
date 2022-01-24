@@ -360,12 +360,12 @@ footer .copyright {
   color: #A1A481;
 }
 
-#kitchen {
+main section#kitchen {
   padding: 4rem 0;
   background-color: #F2E4D4;
 }
 
-#kitchen .container-lg {
+main section#kitchen .container-lg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,13 +378,13 @@ footer .copyright {
           align-items: center;
 }
 
-#kitchen .container-lg .textWrap {
+main section#kitchen .container-lg .textWrap {
   text-align: center;
   max-width: 576px;
   padding: 1rem;
 }
 
-#kitchen .container-lg .textWrap .kitchen-heading {
+main section#kitchen .container-lg .textWrap .kitchen-heading {
   margin-bottom: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -392,7 +392,7 @@ footer .copyright {
   position: relative;
 }
 
-#kitchen .container-lg .textWrap .kitchen-heading::before {
+main section#kitchen .container-lg .textWrap .kitchen-heading::before {
   content: '';
   position: absolute;
   bottom: -1rem;
@@ -407,7 +407,7 @@ footer .copyright {
   border-bottom-color: #F2E4D4;
 }
 
-#kitchen .container-lg .textWrap .desc {
+main section#kitchen .container-lg .textWrap .desc {
   margin-top: 2rem;
   padding-top: 2rem;
   font-size: 1.125rem;
@@ -417,13 +417,13 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .textWrap .desc {
+  main section#kitchen .container-lg .textWrap .desc {
     margin-top: 0;
     padding: 1rem 0;
   }
 }
 
-#kitchen .container-lg .bottomWrap {
+main section#kitchen .container-lg .bottomWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +441,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .bottomWrap {
+  main section#kitchen .container-lg .bottomWrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,7 +453,7 @@ footer .copyright {
         -ms-flex-align: stretch;
             align-items: stretch;
   }
-  #kitchen .container-lg .bottomWrap .areaBtnWrap {
+  main section#kitchen .container-lg .bottomWrap .areaBtnWrap {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -465,32 +465,32 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) and (max-width: 768px) {
-  #kitchen .container-lg .bottomWrap .imgWrap {
+  main section#kitchen .container-lg .bottomWrap .imgWrap {
     width: 500px;
     margin-right: 1rem;
   }
 }
 
 @media screen and (max-width: 768px) and (max-width: 576px) {
-  #kitchen .container-lg .bottomWrap .imgWrap {
+  main section#kitchen .container-lg .bottomWrap .imgWrap {
     width: 320px;
   }
 }
 
 @media screen and (max-width: 768px) and (max-width: 430px) {
-  #kitchen .container-lg .bottomWrap .imgWrap {
+  main section#kitchen .container-lg .bottomWrap .imgWrap {
     width: 280px;
     margin-right: 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .bottomWrap .imgWrap img {
+  main section#kitchen .container-lg .bottomWrap .imgWrap img {
     width: 100%;
   }
 }
 
-#kitchen .container-lg .areaBtnWrap {
+main section#kitchen .container-lg .areaBtnWrap {
   padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,7 +506,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .areaBtnWrap {
+  main section#kitchen .container-lg .areaBtnWrap {
     padding: 0;
     -webkit-box-align: end;
         -ms-flex-align: end;
@@ -518,7 +518,7 @@ footer .copyright {
   }
 }
 
-#kitchen .container-lg .areaBtnWrap .area-btn {
+main section#kitchen .container-lg .areaBtnWrap .area-btn {
   padding: 1.1875rem 2rem;
   width: 12rem;
   font-size: 1.75rem;
@@ -533,14 +533,14 @@ footer .copyright {
 }
 
 @media screen and (max-width: 1140px) {
-  #kitchen .container-lg .areaBtnWrap .area-btn {
+  main section#kitchen .container-lg .areaBtnWrap .area-btn {
     padding: 1rem;
     width: 10rem;
   }
 }
 
 @media screen and (max-width: 992px) {
-  #kitchen .container-lg .areaBtnWrap .area-btn {
+  main section#kitchen .container-lg .areaBtnWrap .area-btn {
     font-size: 1.5rem;
     padding: .75rem 1rem;
     border-radius: 2.5rem;
@@ -552,7 +552,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .areaBtnWrap .area-btn {
+  main section#kitchen .container-lg .areaBtnWrap .area-btn {
     font-size: 1.25rem;
     width: 6rem;
     padding: .5rem 1rem;
@@ -562,66 +562,66 @@ footer .copyright {
 }
 
 @media screen and (max-width: 576px) {
-  #kitchen .container-lg .areaBtnWrap .area-btn {
+  main section#kitchen .container-lg .areaBtnWrap .area-btn {
     font-size: 1.125rem;
     width: 4.5rem;
     padding: .25rem .5rem;
   }
 }
 
-#kitchen .container-lg .areaBtnWrap .north {
+main section#kitchen .container-lg .areaBtnWrap .north {
   background-color: #BC7C96;
 }
 
-#kitchen .container-lg .areaBtnWrap .mid {
+main section#kitchen .container-lg .areaBtnWrap .mid {
   background-color: #DA7569;
 }
 
-#kitchen .container-lg .areaBtnWrap .south {
+main section#kitchen .container-lg .areaBtnWrap .south {
   background-color: #E0AB77;
 }
 
 @media screen and (max-width: 768px) {
-  #kitchen .container-lg .areaBtnWrap .north {
+  main section#kitchen .container-lg .areaBtnWrap .north {
     left: -60%;
   }
-  #kitchen .container-lg .areaBtnWrap .mid {
+  main section#kitchen .container-lg .areaBtnWrap .mid {
     left: -10%;
   }
-  #kitchen .container-lg .areaBtnWrap .south {
+  main section#kitchen .container-lg .areaBtnWrap .south {
     top: unset;
     left: -60%;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #kitchen .container-lg .areaBtnWrap .north {
+  main section#kitchen .container-lg .areaBtnWrap .north {
     left: -35%;
   }
-  #kitchen .container-lg .areaBtnWrap .mid {
+  main section#kitchen .container-lg .areaBtnWrap .mid {
     left: 20%;
   }
 }
 
 @media screen and (max-width: 576px) and (max-width: 476px) {
-  #kitchen .container-lg .areaBtnWrap .mid {
+  main section#kitchen .container-lg .areaBtnWrap .mid {
     left: 0;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #kitchen .container-lg .areaBtnWrap .south {
+  main section#kitchen .container-lg .areaBtnWrap .south {
     top: unset;
     left: -35%;
   }
 }
 
-#location {
+main section#location {
   background-color: #fff;
   padding: 4rem 0;
 }
 
-#location .searchWrap {
+main section#location .searchWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,27 +631,27 @@ footer .copyright {
 }
 
 @media screen and (max-width: 576px) {
-  #location .searchWrap {
+  main section#location .searchWrap {
     margin-bottom: 1rem;
   }
 }
 
-#location .north-area .area-title {
+main section#location .north-area .area-title {
   color: #BC7C96;
   border: 5px solid #BC7C96;
 }
 
-#location .mid-area .area-title {
+main section#location .mid-area .area-title {
   color: #DA7569;
   border: 5px solid #DA7569;
 }
 
-#location .south-area .area-title {
+main section#location .south-area .area-title {
   color: #E0AB77;
   border: 5px solid #E0AB77;
 }
 
-#location .area {
+main section#location .area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -662,7 +662,7 @@ footer .copyright {
   margin-bottom: 4rem;
 }
 
-#location .area .area-title {
+main section#location .area .area-title {
   padding: 1rem 2rem;
   width: 10rem;
   font-size: 1.25rem;
@@ -675,14 +675,14 @@ footer .copyright {
 }
 
 @media screen and (max-width: 992px) {
-  #location .area .area-title {
+  main section#location .area .area-title {
     font-size: 1.25rem;
     width: 8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  #location .area .area-title {
+  main section#location .area .area-title {
     font-size: 1rem;
     width: 6rem;
     padding: .5rem 1rem;
@@ -692,12 +692,12 @@ footer .copyright {
   }
 }
 
-#location .area .locationWrap {
+main section#location .area .locationWrap {
   position: relative;
   margin-top: 2rem;
 }
 
-#location .kitchen-location {
+main section#location .kitchen-location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +712,7 @@ footer .copyright {
           justify-content: space-evenly;
 }
 
-#location .kitchen-location:first-child::before {
+main section#location .kitchen-location:first-child::before {
   content: '';
   position: absolute;
   top: -15px;
@@ -729,7 +729,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 992px) {
-  #location .kitchen-location {
+  main section#location .kitchen-location {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -743,16 +743,16 @@ footer .copyright {
 }
 
 @media screen and (max-width: 576px) {
-  #location .kitchen-location {
+  main section#location .kitchen-location {
     padding: 2rem .75rem;
   }
 }
 
-#location .kitchen-location:last-child {
+main section#location .kitchen-location:last-child {
   border-bottom: none;
 }
 
-#location .kitchen-location-img {
+main section#location .kitchen-location-img {
   width: 240px;
   height: 240px;
   background-size: cover;
@@ -760,16 +760,16 @@ footer .copyright {
 }
 
 @media screen and (max-width: 992px) {
-  #location .kitchen-location-img {
+  main section#location .kitchen-location-img {
     margin-bottom: 1.75rem;
   }
 }
 
-#location .kitchen-location-img img {
+main section#location .kitchen-location-img img {
   width: 100%;
 }
 
-#location .kitchen-location .textWrap {
+main section#location .kitchen-location .textWrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -785,48 +785,48 @@ footer .copyright {
 }
 
 @media screen and (max-width: 992px) {
-  #location .kitchen-location .textWrap {
+  main section#location .kitchen-location .textWrap {
     width: 100%;
   }
 }
 
-#location .kitchen-location-title {
+main section#location .kitchen-location-title {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 992px) and (min-width: 720px) {
-  #location .kitchen-location-title {
+  main section#location .kitchen-location-title {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #location .kitchen-location-title {
+  main section#location .kitchen-location-title {
     font-size: 1.5rem;
   }
 }
 
-#location .kitchen-location-desc {
+main section#location .kitchen-location-desc {
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 2;
 }
 
 @media screen and (max-width: 992px) {
-  #location .kitchen-location-desc {
+  main section#location .kitchen-location-desc {
     margin-bottom: 1.5rem;
   }
 }
 
 @media screen and (max-width: 720px) {
-  #location .kitchen-location-desc {
+  main section#location .kitchen-location-desc {
     margin-bottom: 0;
   }
 }
 
-#location .kitchen-location-time {
+main section#location .kitchen-location-time {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,21 +836,21 @@ footer .copyright {
 }
 
 @media screen and (max-width: 1080px) {
-  #location .kitchen-location-time {
+  main section#location .kitchen-location-time {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
   }
 }
 
-#location .kitchen-location-time .timeWrap {
+main section#location .kitchen-location-time .timeWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 1080px) {
-  #location .kitchen-location-time .timeWrap {
+  main section#location .kitchen-location-time .timeWrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -862,7 +862,7 @@ footer .copyright {
   }
 }
 
-#location .kitchen-location-time .timing {
+main section#location .kitchen-location-time .timing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -879,45 +879,45 @@ footer .copyright {
 }
 
 @media screen and (max-width: 1140px) {
-  #location .kitchen-location-time .timing {
+  main section#location .kitchen-location-time .timing {
     margin-right: 0.75rem;
   }
 }
 
 @media screen and (max-width: 1080px) {
-  #location .kitchen-location-time .timing {
+  main section#location .kitchen-location-time .timing {
     margin: 1rem 0.25rem;
     font-size: 1.125rem;
   }
 }
 
 @media screen and (max-width: 720px) {
-  #location .kitchen-location-time .timing {
+  main section#location .kitchen-location-time .timing {
     margin-bottom: 0.625rem;
   }
 }
 
-#location .kitchen-location-time .weekWrap {
+main section#location .kitchen-location-time .weekWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 1080px) {
-  #location .kitchen-location-time .weekWrap {
+  main section#location .kitchen-location-time .weekWrap {
     margin-left: -0.25rem;
   }
 }
 
 @media screen and (max-width: 720px) {
-  #location .kitchen-location-time .weekWrap {
+  main section#location .kitchen-location-time .weekWrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 100%;
   }
 }
 
-#location .kitchen-location-time .weekWrap .week {
+main section#location .kitchen-location-time .weekWrap .week {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,13 +941,13 @@ footer .copyright {
 }
 
 @media screen and (max-width: 1080px) {
-  #location .kitchen-location-time .weekWrap .week {
+  main section#location .kitchen-location-time .weekWrap .week {
     margin-right: .5rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #location .kitchen-location-time .weekWrap .week {
+  main section#location .kitchen-location-time .weekWrap .week {
     margin-bottom: 0.5rem;
     height: 2.125rem;
     font-size: 0.8rem;
@@ -955,18 +955,18 @@ footer .copyright {
   }
 }
 
-#location .kitchen-location-time .weekWrap .week .en {
+main section#location .kitchen-location-time .weekWrap .week .en {
   font-size: .75rem;
 }
 
-#location .kitchen-location-time .meal {
+main section#location .kitchen-location-time .meal {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media screen and (max-width: 720px) {
-  #location .kitchen-location-time .meal {
+  main section#location .kitchen-location-time .meal {
     position: absolute;
     top: 0;
     right: 0;
@@ -974,12 +974,12 @@ footer .copyright {
 }
 
 @media screen and (max-width: 420px) {
-  #location .kitchen-location-time .meal {
+  main section#location .kitchen-location-time .meal {
     margin-right: -.5rem;
   }
 }
 
-#location .kitchen-location-time .meal > * {
+main section#location .kitchen-location-time .meal > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1002,7 +1002,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 720px) {
-  #location .kitchen-location-time .meal > * {
+  main section#location .kitchen-location-time .meal > * {
     margin-right: .5rem;
     line-height: .9;
     height: 2.5rem;
@@ -1010,11 +1010,11 @@ footer .copyright {
     font-size: 0.9rem;
     position: relative;
   }
-  #location .kitchen-location-time .meal > * .ch {
+  main section#location .kitchen-location-time .meal > * .ch {
     position: relative;
     top: -4px;
   }
-  #location .kitchen-location-time .meal > * .en {
+  main section#location .kitchen-location-time .meal > * .en {
     position: relative;
     top: -4px;
     font-size: .5rem;
@@ -1022,20 +1022,20 @@ footer .copyright {
 }
 
 @media screen and (max-width: 576px) {
-  #location .kitchen-location-time .meal > * {
+  main section#location .kitchen-location-time .meal > * {
     margin-right: 0;
     margin-left: .5rem;
   }
 }
 
 @media screen and (max-width: 350px) {
-  #location .kitchen-location-time .meal > * {
+  main section#location .kitchen-location-time .meal > * {
     margin-right: 0rem;
     margin-left: 0.25rem;
   }
 }
 
-#location .kitchen-location-time .meal > * .en {
+main section#location .kitchen-location-time .meal > * .en {
   font-size: .75rem;
 }
 /*# sourceMappingURL=dinner-location.css.map */
