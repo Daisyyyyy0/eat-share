@@ -51,7 +51,7 @@ header {
 
 @media screen and (max-width: 768px) {
   .navbar .navbar-brand img {
-    height: 2.5rem;
+    height: 3rem;
   }
 }
 
@@ -87,6 +87,12 @@ header {
 
 .navbar .navbar-nav .nav-item {
   margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .navbar-nav .nav-item .nav-link {
@@ -119,13 +125,73 @@ header {
   left: 100%;
 }
 
+.user-icon i {
+  font-size: 1.5rem;
+  color: #DA7569;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .navbar-brand {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: auto;
+  }
+  .navbar-toggler {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .user-icon {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .user-icon i {
+    font-size: 1.625rem;
+  }
+}
+
 footer {
   background-color: #DA7569;
   padding-top: 1.5rem;
+  position: relative;
+}
+
+footer .container-lg {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer .container-lg {
+    margin-top: 1rem;
+  }
+}
+
+footer .row {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer .row {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
 }
 
 footer .col-md-4:first-child {
   padding-left: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  footer .col-md-4:first-child {
+    padding-left: 0;
+  }
 }
 
 footer .contactWrap i.fas {
@@ -135,6 +201,12 @@ footer .contactWrap i.fas {
 @media screen and (min-width: 992px) {
   footer .contactWrap i.fas {
     margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .contactWrap .social-media {
+    display: none;
   }
 }
 
@@ -151,7 +223,7 @@ footer .lilicoco {
           align-items: center;
 }
 
-footer .social-media {
+footer .lilicoco .social-media {
   width: 180px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -159,17 +231,26 @@ footer .social-media {
   margin-top: .75rem;
 }
 
-footer .social-media a {
+footer .lilicoco .social-media a {
   display: inline-block;
   width: 30%;
 }
 
-footer .social-media a img {
+footer .lilicoco .social-media a img {
   width: 2.5rem;
 }
 
 footer .copyright {
   background-color: #A1A481;
+}
+
+@media screen and (max-width: 768px) {
+  footer .lilicoco {
+    margin-bottom: 1.5rem;
+  }
+  footer .lilicoco .footer-logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -193,7 +274,6 @@ footer .copyright {
 
 #searchBar {
   border: 1px solid #A1A481;
-  padding: .25rem;
 }
 
 #searchBar .form-control {
@@ -205,11 +285,34 @@ footer .copyright {
           box-shadow: none;
 }
 
+#searchBar .form-control::-webkit-input-placeholder {
+  color: #A1A481;
+}
+
+#searchBar .form-control:-ms-input-placeholder {
+  color: #A1A481;
+}
+
+#searchBar .form-control::-ms-input-placeholder {
+  color: #A1A481;
+}
+
+#searchBar .form-control::placeholder {
+  color: #A1A481;
+}
+
 #searchBar .btn-outline-success {
   background-color: transparent;
-  border-color: currentColor;
-  border-color: #A1A481;
+  border: 0px;
+  border-radius: unset;
+  border-left: 1px solid #A1A481;
   color: #fff;
+}
+
+#searchBar .btn-outline-success:focus {
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  font-size: .8rem;
 }
 
 #searchBar i.bi {
@@ -1410,7 +1513,7 @@ main #kitchen .shop .shop-introduce .bottom a {
 
 #partner #big-btn {
   display: block;
-  width: 800px;
+  max-width: 800px;
   height: 150px;
   background-color: #BC7C96;
   border-radius: 100px;

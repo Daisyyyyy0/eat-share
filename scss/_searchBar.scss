@@ -16,7 +16,7 @@
 }
 #searchBar{
     border: 1px solid $greenColor;
-    padding: .25rem;
+    // padding: .25rem;
     // border-radius: 50%;
     // border-radius: 1rem;
     
@@ -25,12 +25,22 @@
         &:focus{
             box-shadow: none;
         }
+        &::placeholder{
+            color: $greenColor;
+        }
     }
     .btn-outline-success{
         background-color: transparent; 
-        border-color: currentColor;
-        border-color: $greenColor;
+        border:0px;
+        border-radius: unset;
+        border-left: 1px solid $greenColor;
+        // padding-left: .25rem;
+        // border-color: $greenColor;
         color: #fff;
+        &:focus{
+            box-shadow: unset;
+            font-size: .8rem;
+        }
     }
     i.bi{
         font-size: 16px; 

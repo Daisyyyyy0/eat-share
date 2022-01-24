@@ -17,7 +17,7 @@ header{
     img{
       height: 3.25rem;
       @media screen and(max-width:768px) {
-        height: 2.5rem;
+        height: 3rem;
       }
     }
   }
@@ -49,6 +49,8 @@ header{
     }
     .nav-item {
       margin-right: 10px; 
+      display: flex;
+      align-items: center;
       .nav-link{
         padding: 0.25rem;
         margin: 0 .25rem;
@@ -58,6 +60,7 @@ header{
         position: relative;
         transition: all .3s;
         overflow: hidden;
+        
         &::before{
           content: "";
           position: absolute;
@@ -79,3 +82,30 @@ header{
   }
 }
   
+
+.user-icon{
+  i{
+    font-size: 1.5rem;
+    color: $redColor;
+  }
+}
+
+
+@media screen and(max-width:992px) {
+  .container{
+    justify-content: flex-end;
+  }
+  .navbar-brand{
+    order: -1;
+    margin-right: auto;
+  }
+  .navbar-toggler{
+    order: 3;
+  }
+  .user-icon{
+    order: 0;
+    i{
+      font-size: 1.625rem;
+    }
+  }
+}
