@@ -611,6 +611,11 @@ main{
                     align-items: center;
                 }
             }
+            .shop2{
+                @media screen and (max-width: 1200px) {
+                   flex-direction: row-reverse;
+                }          
+            }
             .shop{
                 display: flex;
                 justify-content: space-between;
@@ -623,7 +628,19 @@ main{
                         width: 200px;
                         height: 200px;
                     }
+                    @media screen and (max-width: 600px) {
+                        width: 100px;
+                        height: 100px;
+                    }   
+                    @media screen and (max-width: 400px) {
+                        width: 45px;
+                        height: 45px;
+                        position: relative;
+                        top: -105px;
+                        left: 30px;
+                    }  
                 }
+                
                 .introduce1{
                     border: 3px solid $greenColor; 
                 }
@@ -644,7 +661,13 @@ main{
                     @media screen and (max-width: 1200px) {
                         border: 0px;
                         width: 350px;
+                        height: 250px;
+                        justify-content: center;
                     }
+                    @media screen and (max-width: 600px) {
+                        width: 250px;
+                        height: 300px;
+                    }  
 
                     .title{
                         font-size: 28px;
@@ -653,6 +676,9 @@ main{
                             display: flex;
                             justify-content: flex-end;
                         }
+                        @media screen and (max-width: 600px) {
+                            justify-content: center;
+                        }
                     }
                     .place{
                         font-size: 24px;
@@ -660,9 +686,6 @@ main{
                         @media screen and (max-width: 1200px) {
                             font-size: 16px;
                             width: 100%;
-                            // display: flex;
-                            // justify-content: flex-end;
-                    
                         }                    
                       
                     }                   
@@ -676,14 +699,21 @@ main{
                         .time-box{
                             display: flex;
                             @media screen and (max-width: 1200px) {
-                               justify-content: space-bet;
+                               justify-content: center;
+                               flex-wrap: wrap;
+                            }
+                            @media screen and (max-width: 600px) {
+                                justify-content: flex-start;
+                                flex-wrap: wrap;
                             }
                             .time{
                                 background-color: #E5E5E5;
                                 border-radius: 20px;
                                 margin-right: 10px; 
-                            }
-                            
+                                @media screen and (max-width: 600px) {
+                                    margin-bottom: 5px;
+                                }
+                            }                            
                         }
                         .see-more{
                             @media screen and (max-width: 1200px) {
@@ -700,12 +730,32 @@ main{
                         }
                        
                     }
+                }              
+            }
+            .shop1{
+                img{                 
+                    @media screen and (max-width: 400px) {
+                        top: -90px;
+                    }                     
                 }
             }
-        }
-
-       
-        
+            .line{
+                display: flex;
+                justify-content: center;
+                img{
+                    display: none;
+                    @media screen and (max-width: 1200px) {
+                        display: flex;
+                    }  
+                    @media screen and (max-width: 600px) {
+                        width: 350px;                      
+                    }    
+                    @media screen and (max-width: 400px) {
+                        width: 280px;
+                    }      
+                }                          
+            }
+        }       
     }
 
     // 我們的夥伴
