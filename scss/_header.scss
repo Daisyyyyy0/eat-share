@@ -99,13 +99,17 @@ header{
     order: -1;
     margin-right: auto;
   }
-  .navbar-toggler{
-    order: 3;
-  }
   .user-icon{
     order: 0;
     i{
       font-size: 1.625rem;
     }
+  }
+  .navbar-toggler{
+    order: 1;
+  }
+
+  .navbar-collapse{
+    order: 2;
   }
 }

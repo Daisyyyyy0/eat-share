@@ -1,7 +1,10 @@
 footer {
     background-color: #DA7569;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     position: relative;
+    @media screen and(max-width:768px) {
+      padding-top: 1.5rem;
+    }
     .container-lg{
       margin-top: 3rem;
       @media screen and(max-width:768px) {
@@ -42,9 +45,30 @@ footer {
         .social-media{
           display: none;
         }
+      }
+      
+
+  }
+  @media screen and(max-width:576px) {
+    .helpWrap,.contactWrap{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-
-
+    .helpWrap{
+      margin-top: 0 !important;
+      margin-bottom: 1rem;
+      *{
+        width: 4rem;
+        width: 220px;
+      }
+    }
+    .contactWrap{
+      &>*{
+        width: 220px;
+      }
+    }
   }
 
   .lilicoco{

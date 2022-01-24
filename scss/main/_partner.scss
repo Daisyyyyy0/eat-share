@@ -7,7 +7,7 @@
     background-size:1920px 900px;
     background-repeat: no-repeat;
     position: relative;
-    height: 500px;
+    // height: 500px;
     font-size:20px;
     .container{
         .h2{
@@ -24,11 +24,15 @@
         justify-content: center;
         max-width: 1140px;
         margin: auto;
+        margin-bottom: 4rem;
+        @media screen and(max-width:768px) {
+            flex-wrap: wrap;
+          }
         .city{
             width: 150px;
             height: 200px;
             // border:3px solid currentColor
-            margin: 0px 10px;
+            margin: 20px 10px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -77,12 +81,15 @@
     #big-btn{
         display: block;
         max-width: 800px;
+        width: 100%;
         height: 150px;
+        z-index: 200;
         background-color: $purpleColor;
         border-radius: 100px;
         position: absolute;
-        left: calc(50% - 400px);
-        bottom: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -75px;
         margin: 0px;
         line-height: 150px;
         font-size:3rem;
@@ -90,7 +97,15 @@
         color: white;
         box-shadow: 5px 10px 10px rgba($color: #333, $alpha: .2);
         // box-shadow: 5px 10px 10px rgba($color: $purple_darker, $alpha: .5);
-
+        @media screen and(max-width:768px) {
+            max-width: 375px;
+            height: 75px;
+            line-height: 75px;
+            font-size:1.25rem;
+            position: unset;
+            transform: unset;
+            margin: auto;
+          }
     }
 
 }
