@@ -369,6 +369,20 @@ main #choice {
   padding: 4rem 0;
 }
 
+main #choice .choice-heading {
+  margin: 4rem 0 3rem;
+}
+
+main #choice .choice-heading h2 {
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+main #choice .acc-btnWrap {
+  margin-bottom: 4rem;
+}
+
 main #choice .acc-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +399,19 @@ main #choice .acc-btn {
   padding: 20px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  main #choice .acc-btn {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  main #choice .acc-btn {
+    padding: 5px;
+  }
 }
 
 main #choice .acc-btn * {
@@ -398,7 +425,7 @@ main #choice .acc-btn:hover img {
 }
 
 main #choice .acc-btn .img {
-  width: 290px;
+  max-width: 290px;
   overflow: hidden;
 }
 
@@ -407,10 +434,39 @@ main #choice .acc-btn .img img {
 }
 
 main #choice .acc-btn .text {
-  margin: 40px 0;
+  height: 72px;
+  margin: 40px 50px;
   color: #333;
   text-align: center;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  main #choice .acc-btn .text {
+    margin: 20px 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #choice .acc-btn .text {
+    position: absolute;
+    margin: 0;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 0.85rem;
+  }
+  main #choice .acc-btn .text span {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  main #choice .acc-btn .text {
+    display: none;
+  }
 }
 
 main #choice .acc-btn .text span {
@@ -419,16 +475,38 @@ main #choice .acc-btn .text span {
 
 main #choice .acc-btn .letter {
   border-radius: 10px;
-  width: 290px;
+  max-width: 290px;
   color: white;
   font-size: 24px;
   text-align: center;
-  padding: 17px 0;
+  padding: 17px 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  main #choice .acc-btn .letter {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 1rem 1.5rem;
+    margin-top: 0.5rem;
+  }
 }
 
 main #choice .fire {
   border: 5px solid #BC7C96;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main #choice .fire {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #choice .fire {
+    margin-right: .25rem;
+  }
 }
 
 main #choice .fire:hover {
@@ -446,6 +524,18 @@ main #choice .fire .letter {
 main #choice .join {
   border: 5px solid #E0AB77;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  main #choice .join {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main #choice .join {
+    margin-left: .25rem;
+  }
 }
 
 main #choice .join:hover {
@@ -1556,13 +1646,12 @@ main #kitchen .container .line img {
   padding: 1rem 0 4rem;
 }
 
-#pain-point .container {
+#pain-point .container-xl {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1570,7 +1659,16 @@ main #kitchen .container .line img {
   max-width: 1140px;
 }
 
-#pain-point .container .row {
+@media screen and (max-width: 992px) {
+  #pain-point .container-xl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+#pain-point .container-xl .row {
   width: 100%;
 }
 
@@ -1589,6 +1687,19 @@ main #kitchen .container .line img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  #pain-point .pain {
+    margin-bottom: 2rem;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #pain-point .pain {
+    max-width: unset;
+  }
 }
 
 #pain-point .pain:nth-child(2n) {

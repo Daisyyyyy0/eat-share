@@ -7,6 +7,17 @@ main{
         background-image: url(../image/index_bg.png);
         padding: 4rem 0;
 
+        .choice-heading{
+            margin: 4rem 0 3rem;
+            h2{
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+        }
+        .acc-btnWrap{
+            margin-bottom: 4rem;
+        }
         .acc-btn{
             // width: 450px;
             // height: 580px;
@@ -17,6 +28,14 @@ main{
             margin: auto;
             padding: 20px;
             transition: all .3s;
+            position: relative;
+            @media screen and (max-width:768px) {
+                padding: 10px;
+            }
+            @media screen and (max-width:412px) {
+                padding:5px;
+            }
+
             *{
                 transition: all .3s;
             }
@@ -26,33 +45,66 @@ main{
                 }
             }
             .img{
-                width: 290px;
+                max-width: 290px;
                 overflow: hidden;
                 img{
                     width: 100%;
                 }
             }
             .text{
-                margin: 40px 0;
+                height: 72px;
+                margin: 40px 50px;
                 color: $textColor;
                 text-align: center;
                 font-weight: 600;
+                @media screen and (max-width:768px) {
+                    margin: 20px 40px;
+                }
+                @media screen and (max-width:576px) {
+                    position: absolute;
+                    margin: 0;
+                    top: 30%; 
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: #fff;
+                    font-size: 0.85rem;
+                    span{
+                        width: 130px;
+                    }
+                }
+                @media screen and (max-width:412px) {
+                    display: none;
+                }
                 span{
                     display: block;
                 }
             }
             .letter{
                 border-radius: 10px;
-                width: 290px;
+                max-width: 290px;
+                // width: 290px;
                 color: white;
                 font-size: 24px;
                 text-align: center;
-                padding: 17px 0;
+                padding: 17px 2rem;
+                @media screen and (max-width:576px) {
+                    font-size: 1rem;
+                    font-weight: 700;
+                    letter-spacing: 2px;
+                    padding: 1rem 1.5rem;
+                    margin-top: 0.5rem;
+                }
             }
         }
         .fire{
             border: 5px solid $purpleColor;
             margin-right: 20px;
+            @media screen and (max-width:768px) {
+                margin-right: 10px;
+            }
+            @media screen and (max-width:576px) {
+                margin-right: .25rem;
+            }
             &:hover{
                 border: 5px solid $purple_darker;
                 .letter{
@@ -66,6 +118,12 @@ main{
         .join{
             border: 5px solid $teaColor;
             margin-left: 20px;
+            @media screen and (max-width:768px) {
+                margin-left: 10px;
+            }
+            @media screen and (max-width:576px) {
+                margin-left: .25rem;
+            }
             &:hover{
                 border: 5px solid $tea_darker;
                 .letter{
