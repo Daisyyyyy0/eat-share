@@ -18,9 +18,13 @@ function renderList(data){
                             <div class="kitchen-location-title">
                                 ${item.title}
                             </div>
-                            <div class="kitchen-location-desc">
+                            <div class="kitchen-location-desc text-truncate">
                                 ${item.content}
                             </div>
+                            <button type="button" class="modal-btn btn" data-bs-toggle="modal"
+                                    data-bs-target="#moreModal" data-id="${item.id}">
+                                    按我看更多
+                            </button>
                             <div class="kitchen-location-time">
                                 <div class="timeWrap">
                                     <div class="timing">時段</div>
@@ -61,6 +65,66 @@ function renderList(data){
                             </div>
                         </div>
                     </div>
+
+                    <div class="modal fade" id="moreModal" tabindex="-1" aria-labelledby="moreModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="moreModalLabel">台北市文山區-1</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modal-img"
+                                            style="background-image: url('./image/dinner-location1.jpg');">
+                                        </div>
+                                        <div class="modal-cooker">
+                                            <span>開伙人：</span>
+                                            <span class="name">皓媽</span>
+                                        </div>
+                                        <div class="kitchen-location-desc">
+                                            皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
+                                            (BTW，這飯菜看起來好溫馨喔)
+                                        </div>
+
+                                        <div class="kitchen-location-time">
+                                            <div class="timeWrap">
+                                                <div class="timing">時段</div>
+                                                <div class="weekWrap">
+                                                    <div class="week mon">
+                                                        <span class="ch">星期一</span>
+                                                        <span class="en">Mon.</span>
+                                                    </div>
+                                                    <div class="week tues">
+                                                        <span class="ch">星期二</span>
+                                                        <span class="en">Tues.</span>
+                                                    </div>
+                                                    <div class="week wed">
+                                                        <span class="ch">星期三</span>
+                                                        <span class="en">Wed.</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="meal">
+                                                <div class="lunch">
+                                                    <span class="ch">午</span>
+                                                    <span class="en">lunch</span>
+                                                </div>
+                                                <div class="dinner">
+                                                    <span class="ch">晚</span>
+                                                    <span class="en">dinner</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn close-btn"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 `
         })
         dataPanel.innerHTML = rawHTML
@@ -99,6 +163,12 @@ fetch("JS/dinner.json")
                 )
                 console.log(filterLocations);
                 renderList(filterLocations)
+            })
+
+            dataPanel.addEventListener('click', function onPanelClicked(e){
+                if (e.target.matches('.modal-btn')){
+                    console.log(e.target.dataset);
+                }
             })
         }
     );
