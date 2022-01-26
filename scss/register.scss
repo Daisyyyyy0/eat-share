@@ -72,8 +72,11 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-        .log-in{
-            color: #CD2424;
+        .log-in{          
+            a{
+               text-decoration: none;  
+               color: #CD2424;
+            }          
         }
     }
    
