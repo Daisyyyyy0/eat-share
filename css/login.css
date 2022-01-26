@@ -113,7 +113,8 @@
   display: flex;
 }
 
-.login .content .text .bottom .join-us {
+.login .content .text .bottom .join-us a {
+  text-decoration: none;
   color: #CD2424;
   margin-left: 10px;
 }
