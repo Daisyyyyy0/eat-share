@@ -9,6 +9,7 @@
     }
     .content{
         // 最小高度是100vh (高度小於100時會是100 超過100時 不會爆版)
+        color: $textColor;
         min-height: 100vh;
         width: 860px;
         display: flex;
@@ -20,18 +21,20 @@
             margin-right: 5px;
         }
         .text{
-            // border: 1px solid #000;
             display: flex;
-            // width: 400px;
-            // justify-content: center;
             font-weight: bold;
-            .title{
-                font-size: 36px;
-                margin-bottom: 5%;
-            }
-            .title-word{
-                display: none;
-            }
+            .title-box{
+                .title{    
+                    a{
+                        text-decoration: none; 
+                        font-size: 36px;
+                        margin-bottom: 5%;
+                    }                                                          
+                }
+                .title-word{
+                    display: none;
+                } 
+            }           
             .email{
                 font-size: 20px;
                 img{
@@ -80,8 +83,7 @@
                     .button2{
                         display: none;
                     }  
-                }
-                
+                }                
             }
             .bottom{
                 font-size: 20px;
@@ -92,10 +94,8 @@
                         color: #CD2424;
                         margin-left: 10px;
                     }
-                }
-                
-            }
-            
+                }               
+            }           
         }
     }
 }

@@ -36,9 +36,11 @@
   font-weight: bold;
 }
 
-.login .content .text .title {
+.login .content .text .title a{
+  text-decoration: none;
   font-size: 36px;
   margin-bottom: 5%;
+  color: black;
 }
 
 .login .content .text .title-word {
