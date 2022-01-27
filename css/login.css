@@ -5,7 +5,7 @@
 }
 
 .login .picture {
-  background-image: url("/image/login-picture/login-picture.png");
+  background-image: url('/image/login-picture/login-picture.png');
   background-position: center;
   background-size: cover;
   width: 1059px;
