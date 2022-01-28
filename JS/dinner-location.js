@@ -22,7 +22,6 @@ function renderWeek(thisss) {
     })
 }
 function renderList(data){
-
         let rawHTML = ''
         data.forEach((item) => {
             renderWeek(item);
@@ -335,6 +334,14 @@ function renderList(data){
             southPanel.innerHTML += rawHTML
         }        
         })
+}
+
+function showNodal(id) {
+    const modalTitle = document.querySelectorAll('#moreModal .modal-title')
+    const modalImage = document.querySelectorAll('#moreModal .modal-img')
+    const modalCoocker = document.querySelectorAll('#.modal-cooker .name')
+    const modalDesc = document.querySelectorAll('#moreModal .kitchen-location-desc')
+
 }
 
 fetch("JS/dinner.json")
