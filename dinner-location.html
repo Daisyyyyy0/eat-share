@@ -17,6 +17,62 @@
 </head>
 
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="moreModal" tabindex="-1" aria-labelledby="moreModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="moreModalLabel">台北市文山區-1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-img" style="background-image: url('./image/dinner-location1.jpg');">
+                    </div>
+                    <div class="modal-cooker">
+                        <span>開伙人：</span>
+                        <span class="name">皓媽</span>
+                    </div>
+                    <div class="kitchen-location-desc">
+                        皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
+                        (BTW，這飯菜看起來好溫馨喔)
+                    </div>
+
+                    <div class="kitchen-location-time">
+                        <div class="timeWrap">
+                            <div class="timing">時段</div>
+                            <div class="weekWrap">
+                                <div class="week mon">
+                                    <span class="ch">星期一</span>
+                                    <span class="en">Mon.</span>
+                                </div>
+                                <div class="week tues">
+                                    <span class="ch">星期二</span>
+                                    <span class="en">Tues.</span>
+                                </div>
+                                <div class="week wed">
+                                    <span class="ch">星期三</span>
+                                    <span class="en">Wed.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="meal">
+                            <div class="lunch">
+                                <span class="ch">午</span>
+                                <span class="en">lunch</span>
+                            </div>
+                            <div class="dinner">
+                                <span class="ch">晚</span>
+                                <span class="en">dinner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
@@ -89,7 +145,6 @@
         <section id="location">
             <div class="container-xl">
                 <div id="north" class="area north-area">
-
                     <div class="searchWrap">
                         <div class="area-title">
                             北區
@@ -109,267 +164,32 @@
                     </div>
 
                     <div class="locationWrap">
-                        <div class="kitchen-location">
-                            <div class="kitchen-location-img"
-                                style="background-image: url('./image/dinner-location1.jpg');">
-                            </div>
-                            <div class="textWrap">
-                                <div class="kitchen-location-title">
-                                    台北市文山區-1
-                                </div>
-                                <div class="kitchen-location-desc  text-truncate">
-                                    皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                    (BTW，這飯菜看起來好溫馨喔)
-                                </div>
 
-                                <!-- Button trigger modal -->
-                                <button type="button" class="modal-btn btn" data-bs-toggle="modal"
-                                    data-bs-target="#moreModal">
-                                    按我看更多
-                                </button>
-                                <div class="kitchen-location-time">
-                                    <div class="timeWrap">
-                                        <div class="timing">時段</div>
-                                        <div class="weekWrap">
-                                            <div class="week mon">
-                                                <span class="ch">星期一</span>
-                                                <span class="en">Mon.</span>
-                                            </div>
-                                            <div class="week tues">
-                                                <span class="ch">星期二</span>
-                                                <span class="en">Tues.</span>
-                                            </div>
-                                            <div class="week wed">
-                                                <span class="ch">星期三</span>
-                                                <span class="en">Wed.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="meal">
-                                        <div class="lunch">
-                                            <span class="ch">午</span>
-                                            <span class="en">lunch</span>
-                                        </div>
-                                        <div class="dinner">
-                                            <span class="ch">晚</span>
-                                            <span class="en">dinner</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- Modal -->
-                        <div class="modal fade" id="moreModal" tabindex="-1" aria-labelledby="moreModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="moreModalLabel">台北市文山區-1</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="modal-img"
-                                            style="background-image: url('./image/dinner-location1.jpg');">
-                                        </div>
-                                        <div class="modal-cooker">
-                                            <span>開伙人：</span>
-                                            <span class="name">皓媽</span>
-                                        </div>
-                                        <div class="kitchen-location-desc">
-                                            皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                            (BTW，這飯菜看起來好溫馨喔)
-                                        </div>
-
-                                        <div class="kitchen-location-time">
-                                            <div class="timeWrap">
-                                                <div class="timing">時段</div>
-                                                <div class="weekWrap">
-                                                    <div class="week mon">
-                                                        <span class="ch">星期一</span>
-                                                        <span class="en">Mon.</span>
-                                                    </div>
-                                                    <div class="week tues">
-                                                        <span class="ch">星期二</span>
-                                                        <span class="en">Tues.</span>
-                                                    </div>
-                                                    <div class="week wed">
-                                                        <span class="ch">星期三</span>
-                                                        <span class="en">Wed.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="meal">
-                                                <div class="lunch">
-                                                    <span class="ch">午</span>
-                                                    <span class="en">lunch</span>
-                                                </div>
-                                                <div class="dinner">
-                                                    <span class="ch">晚</span>
-                                                    <span class="en">dinner</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn close-btn"
-                                            data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="kitchen-location">
-                            <div class="kitchen-location-img"
-                                style="background-image: url('./image/dinner-location2.jpg');">
-                                <!-- <img src="./image/dinner-location1.jpg" alt=""> -->
-                            </div>
-                            <div class="textWrap">
-                                <div class="kitchen-location-title">
-                                    台北市南港區-2
-                                </div>
-                                <div class="kitchen-location-desc">
-                                    皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                    (BTW，這飯菜看起來好溫馨喔)
-                                </div>
-                                <div class="kitchen-location-time">
-                                    <div class="timeWrap">
-                                        <div class="timing">時段</div>
-                                        <div class="weekWrap">
-                                            <div class="week mon">
-                                                <span class="ch">星期一</span>
-                                                <span class="en">Mon.</span>
-                                            </div>
-                                            <div class="week tues">
-                                                <span class="ch">星期二</span>
-                                                <span class="en">Tues.</span>
-                                            </div>
-                                            <div class="week wed">
-                                                <span class="ch">星期三</span>
-                                                <span class="en">Wed.</span>
-                                            </div>
-                                            <div class="week thus">
-                                                <span class="ch">星期四</span>
-                                                <span class="en">Thus.</span>
-                                            </div>
-                                            <div class="week fri">
-                                                <span class="ch">星期五</span>
-                                                <span class="en">Fri.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="meal">
-                                        <div class="lunch">
-                                            <span class="ch">午</span>
-                                            <span class="en">lunch</span>
-                                        </div>
-                                        <div class="dinner">
-                                            <span class="ch">晚</span>
-                                            <span class="en">dinner</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
 
                 </div>
                 <div id="mid" class="area mid-area">
-                    <div class="area-title">
-                        中區
-                    </div>
-                    <div class="locationWrap">
-                        <div class="kitchen-location">
-                            <!-- <div class="kitchen-location-img"
-                                style="background-image: url('./image/dinner-location3.jpg');">
-                            </div> -->
-                            <!-- <div class="textWrap">
-                                <div class="kitchen-location-title">
-                                    台中市西屯區-1
-                                </div>
-                                <div class="kitchen-location-desc">
-                                    皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                    (BTW，這飯菜看起來好溫馨喔)
-                                </div>
-                                <div class="kitchen-location-time">
-                                    <div class="timeWrap">
-                                        <div class="timing">時段</div>
-                                        <div class="weekWrap">
-                                            <div class="week mon">
-                                                <span class="ch">星期一</span>
-                                                <span class="en">Mon.</span>
-                                            </div>
-                                            <div class="week tues">
-                                                <span class="ch">星期二</span>
-                                                <span class="en">Tues.</span>
-                                            </div>
-                                            <div class="week wed">
-                                                <span class="ch">星期三</span>
-                                                <span class="en">Wed.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="meal">
-                                        <div class="lunch">
-                                            <span class="ch">午</span>
-                                            <span class="en">lunch</span>
-                                        </div>
-                                        <div class="dinner">
-                                            <span class="ch">晚</span>
-                                            <span class="en">dinner</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> -->
+                    <div class="searchWrap">
+                        <div class="area-title">
+                            中區
                         </div>
-                        <!-- <div class="kitchen-location">
-                            <div class="kitchen-location-img"
-                                style="background-image: url('./image/dinner-location4.jpg');">
+                        <div class="searchBarWrap">
+                            <form id="searchBar" class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search..."
+                                    aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </form>
+                            <div class="point">
+                                請輸入區域關鍵字，例:內湖區、松山區...
                             </div>
-                            <div class="textWrap">
-                                <div class="kitchen-location-title">
-                                    台中市南屯區-2
-                                </div>
-                                <div class="kitchen-location-desc">
-                                    皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                    (BTW，這飯菜看起來好溫馨喔)
-                                </div>
-                                <div class="kitchen-location-time">
-                                    <div class="timeWrap">
-                                        <div class="timing">時段</div>
-                                        <div class="weekWrap">
-                                            <div class="week mon">
-                                                <span class="ch">星期一</span>
-                                                <span class="en">Mon.</span>
-                                            </div>
-                                            <div class="week tues">
-                                                <span class="ch">星期二</span>
-                                                <span class="en">Tues.</span>
-                                            </div>
-                                            <div class="week wed">
-                                                <span class="ch">星期三</span>
-                                                <span class="en">Wed.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="meal">
-                                        <div class="lunch">
-                                            <span class="ch">午</span>
-                                            <span class="en">lunch</span>
-                                        </div>
-                                        <div class="dinner">
-                                            <span class="ch">晚</span>
-                                            <span class="en">dinner</span>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
 
-                                </div>
-                            </div>
-                        </div> -->
+                    <div class="locationWrap">
+
                     </div>
 
 
@@ -378,51 +198,18 @@
                     <div class="area-title">
                         南區
                     </div>
-                    <div class="locationWrap">
-                        <div class="kitchen-location">
-                            <!-- <div class="kitchen-location-img"
-                                style="background-image: url('./image/dinner-location5.jpg');">
-                            </div>
-                            <div class="textWrap">
-                                <div class="kitchen-location-title">
-                                    高雄市鹽埕區-1
-                                </div>
-                                <div class="kitchen-location-desc">
-                                    皓媽當全職家庭主婦近三年了，為家人烹煮健康的料理是她最大的樂趣。重視食材的品質，偏好營養均衡的料理，不過度調味，皓媽願意與你分享家庭伙食!
-                                    (BTW，這飯菜看起來好溫馨喔)
-                                </div>
-                                <div class="kitchen-location-time">
-                                    <div class="timeWrap">
-                                        <div class="timing">時段</div>
-                                        <div class="weekWrap">
-                                            <div class="week mon">
-                                                <span class="ch">星期一</span>
-                                                <span class="en">Mon.</span>
-                                            </div>
-                                            <div class="week tues">
-                                                <span class="ch">星期二</span>
-                                                <span class="en">Tues.</span>
-                                            </div>
-                                            <div class="week wed">
-                                                <span class="ch">星期三</span>
-                                                <span class="en">Wed.</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="meal">
-                                        <div class="lunch">
-                                            <span class="ch">午</span>
-                                            <span class="en">lunch</span>
-                                        </div>
-                                        <div class="dinner">
-                                            <span class="ch">晚</span>
-                                            <span class="en">dinner</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div> -->
+                    <div class="searchBarWrap">
+                        <form id="searchBar" class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </form>
+                        <div class="point">
+                            請輸入區域關鍵字，例:內湖區、松山區...
                         </div>
+                    </div>
+                    <div class="locationWrap">
 
                     </div>
 

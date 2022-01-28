@@ -294,12 +294,12 @@ footer .copyright {
 }
 
 @media screen and (max-width: 430px) {
-  .searchBarWrap {
+  .area .searchBarWrap {
     width: 210px;
   }
 }
 
-.searchBarWrap .point {
+.area .searchBarWrap .point {
   font-size: 0.8rem;
   margin-top: 0.25rem;
   color: #A1A481;
@@ -307,7 +307,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 430px) {
-  .searchBarWrap .point {
+  .area .searchBarWrap .point {
     letter-spacing: 0px;
   }
 }

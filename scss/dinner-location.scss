@@ -184,7 +184,7 @@ main section#kitchen{
 
 main section#location{
     background-color: #fff;
-    padding: 4rem 0;
+    // padding: 4rem 0;
     .searchWrap{
         display: flex;
         justify-content: space-between;
@@ -212,9 +212,11 @@ main section#location{
          }       
     }
     .area{
-        display: flex;
+        // display: flex;
+        padding: 4rem 0;
         flex-direction: column;
         margin-bottom: 4rem;
+        display: none;
         .area-title{
             padding: 1rem 2rem;
             width: 10rem;
@@ -240,6 +242,9 @@ main section#location{
             position: relative;
             margin-top: 2rem;
         }
+    }
+    .area.active{
+        display: flex;
     }
     .kitchen-location{
         display: flex;

@@ -294,12 +294,12 @@ footer .copyright {
 }
 
 @media screen and (max-width: 430px) {
-  .searchBarWrap {
+  .area .searchBarWrap {
     width: 210px;
   }
 }
 
-.searchBarWrap .point {
+.area .searchBarWrap .point {
   font-size: 0.8rem;
   margin-top: 0.25rem;
   color: #A1A481;
@@ -307,7 +307,7 @@ footer .copyright {
 }
 
 @media screen and (max-width: 430px) {
-  .searchBarWrap .point {
+  .area .searchBarWrap .point {
     letter-spacing: 0px;
   }
 }
@@ -679,7 +679,6 @@ main section#kitchen .container-lg .areaBtnWrap .south {
 
 main section#location {
   background-color: #fff;
-  padding: 4rem 0;
 }
 
 main section#location .searchWrap {
@@ -713,14 +712,13 @@ main section#location .south-area .area-title {
 }
 
 main section#location .area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 4rem 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 4rem;
+  display: none;
 }
 
 main section#location .area .area-title {
@@ -756,6 +754,12 @@ main section#location .area .area-title {
 main section#location .area .locationWrap {
   position: relative;
   margin-top: 2rem;
+}
+
+main section#location .area.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main section#location .kitchen-location {
