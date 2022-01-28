@@ -5,7 +5,7 @@
 }
 
 .login .picture {
-  background-image: url("/image/login-picture/login-picture.png");
+  background-image: url('/image/login-picture/login-picture.png');
   background-position: center;
   background-size: cover;
   width: 1059px;
@@ -36,9 +36,11 @@
   font-weight: bold;
 }
 
-.login .content .text .title {
+.login .content .text .title a{
+  text-decoration: none;
   font-size: 36px;
   margin-bottom: 5%;
+  color: black;
 }
 
 .login .content .text .title-word {
@@ -59,6 +61,8 @@
   height: 50px;
   border: 3px #DA7569 solid;
   background-color: #F2E4D4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .login .content .text .password {
@@ -74,6 +78,8 @@
   height: 50px;
   border: 3px #DA7569 solid;
   background-color: #F2E4D4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .login .content .text .button-box {

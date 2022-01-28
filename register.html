@@ -11,29 +11,29 @@
 </head>
 <body>
     <div class="register">       
-        <form action="">
+        <form action="./login.html" method="get">
             <div class="register-title">
                 <p> 註冊頁面</p>
             </div>
             <div class="email">
                 <label for="inputEmail" class="form-label">電子郵件</label>
-                <input type="email" class="form-control" id="inputEmail">
+                <input type="email" class="form-control" id="inputEmail" name="email">
             </div>
             <div class="password">
                 <label for="inputPassword" class="form-label">密碼</label>
-                <input type="password" class="form-control" id="inputPassword">
+                <input type="password" class="form-control" id="inputPassword" name="password">
             </div>
             <div class="password-again">
                 <label for="inputPassword-again" class="form-label">確認密碼</label>
-                <input type="password" class="form-control" id="inputPassword-again">
+                <input type="password" class="form-control" id="inputPassword-again" name="password-again">
             </div>
             <div class="user-name">
                 <label for="inputUser-name" class="form-label">暱稱</label>
-                <input type="password" class="form-control" id="inputUser-name">
+                <input type="name" class="form-control" id="inputUser-name" name="nickname">
             </div>
             <div class="phone">
                 <label for="inputphone" class="form-label">手機號碼</label>
-                <input type="tel" minlength="10" maxlength="10" class="form-control" id="inputphone">
+                <input type="tel" minlength="10" maxlength="10" class="form-control" id="inputphone" name="phone-number">
             </div>
             <p>填寫完成，送出資料</p>
             <div class="button">
@@ -47,8 +47,10 @@
                 <div class="log-in">
                     <a href="./login.html">立即登入</a>
                 </div>  
-            </div>        
-            <img src="./image/login-picture/logo.png" alt="">
+            </div>   
+            <a href="./index.html">
+                <img src="./image/login-picture/logo.png" alt="">    
+            </a>                
         </div>  
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

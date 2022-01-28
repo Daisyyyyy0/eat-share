@@ -14,12 +14,16 @@
         <div class="picture"></div>
         <div class="content">
             <div class="logo">
-                <img src="./image/login-picture/logo.png" alt="">
+                <a href="./index.html">
+                    <img src="./image/login-picture/logo.png" alt="">    
+                </a>               
             </div>
             <div class="text">
-                <form>
+                <form action="./system.html" method="get">
                     <div class="title-box">
-                        <div class="title">共餐平台歡迎您~</div>    
+                        <div class="title">
+                            <a href="./index.html">共餐平台歡迎您~</a>
+                        </div>    
                         <div class="title-word">
                             <div>請輸入帳號及密碼</div>
                             <div>以登入您的帳戶</div>
@@ -28,12 +32,12 @@
                     <div class="email">
                         <label for="exampleInputEmail1" class="">電子郵件帳號</label>
                         <img src="./image/login-picture/X.png" alt="">
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email">
                     </div>
                     <div class="password">
                         <label for="exampleInputPassword1" class="">密碼</label>
                         <img src="./image/login-picture/X.png" alt="">
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                        <input type="password" class="form-control" id="exampleInputPassword1" name="password">
                     </div>
                     <div class="button-box">
                         <button type="submit" class="button1">登入</button>  
