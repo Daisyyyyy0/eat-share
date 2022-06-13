@@ -421,6 +421,148 @@ footer .copyright {
   background-color: #d5d5d5;
 }
 
+.modal .kitchen-location-time .weekWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1080px) {
+  .modal .kitchen-location-time .weekWrap {
+    margin-left: -0.25rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .modal .kitchen-location-time .weekWrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.modal .kitchen-location-time .weekWrap .week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 4.5rem;
+  height: 2.25rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  background-color: #cbccac;
+  color: white;
+  border-radius: 1.5rem;
+  line-height: 1.125;
+}
+
+@media screen and (max-width: 1080px) {
+  .modal .kitchen-location-time .weekWrap .week {
+    margin-right: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modal .kitchen-location-time .weekWrap .week {
+    margin-bottom: 0.5rem;
+    height: 2.125rem;
+    font-size: 0.8rem;
+    line-height: 1.1;
+  }
+}
+
+.modal .kitchen-location-time .weekWrap .week .en {
+  font-size: .75rem;
+}
+
+.modal .kitchen-location-time .meal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 720px) {
+  .modal .kitchen-location-time .meal {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal .kitchen-location-time .meal {
+    margin-right: -.5rem;
+  }
+}
+
+.modal .kitchen-location-time .meal > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: .5rem;
+  text-align: center;
+  background-color: #D9CDBE;
+  line-height: 1.125;
+  font-weight: 600;
+  color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 720px) {
+  .modal .kitchen-location-time .meal > * {
+    margin-right: .5rem;
+    line-height: .9;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 0.9rem;
+    position: relative;
+  }
+  .modal .kitchen-location-time .meal > * .ch {
+    position: relative;
+    top: -4px;
+  }
+  .modal .kitchen-location-time .meal > * .en {
+    position: relative;
+    top: -4px;
+    font-size: .5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .modal .kitchen-location-time .meal > * {
+    margin-right: 0;
+    margin-left: .5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .modal .kitchen-location-time .meal > * {
+    margin-right: 0rem;
+    margin-left: 0.25rem;
+  }
+}
+
+.modal .kitchen-location-time .meal > * .en {
+  font-size: .75rem;
+}
+
 main section#kitchen {
   padding: 4rem 0;
   background-color: #F2E4D4;

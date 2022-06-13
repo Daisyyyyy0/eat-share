@@ -265,20 +265,27 @@ function filterList(data) {
 }
 
 function showModal(id) {
-    const modalTitle = document.querySelectorAll('#moreModal .modal-title')
-    const modalImage = document.querySelectorAll('#moreModal .modal-img')
-    const modalCoocker = document.querySelectorAll('#modal-cooker .name')
-    const modalDesc = document.querySelectorAll('#moreModal .kitchen-location-desc')
+    const modalTitle = document.querySelector('#moreModal .modal-title')
+    const modalImage = document.querySelector('#moreModal .modal-img')
+    const modalCoocker = document.querySelector('.modal-cooker .name')
+    const modalDesc = document.querySelector('#moreModal .kitchen-location-desc')
+    console.log(modalCoocker);
+    console.log(modalImage);
+    console.log(modalDesc);
+
+
     fetch("JS/dinner.json")
         .then(response => {
             return response.json();
         })
         .then( response => {
             let locations = response.data
-            // console.log(locations)
-            // console.log(locations[id-1])
+            console.log(locations[id-1].title)
+            console.log(locations[id-1].content)
+
             modalTitle.innerText = locations[id-1].title
-            modalImage.innerText = locations[id-1].img
+
+            modalImage.setAttribute('style', `background-image: url(" ${locations[id-1].img}");`) 
             modalCoocker.innerText = locations[id-1].cooker
             modalDesc.innerText = locations[id-1].content
         })
@@ -322,8 +329,6 @@ fetch("JS/dinner.json")
                 filterLocations = locations.filter( (location) =>
                     location.title.includes(keyword)
                 )
-                // console.log(filterLocations);
-                // console.log(dataPanel);
                 filterList(filterLocations)
             })
         }
